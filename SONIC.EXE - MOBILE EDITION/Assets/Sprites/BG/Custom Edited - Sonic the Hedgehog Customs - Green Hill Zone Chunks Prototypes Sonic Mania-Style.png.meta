@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: 0a2d1511fec2eeb6d97b842e6bea7551
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8210427167007496381
+    second: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+      Sonic Mania-Style_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 522
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccf887d90b471d38b219801d9502e3a
+      internalID: -8210427167007496381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 522
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebbc133b81f4d4bbbb229ce9d51fef5
+      internalID: -1200576046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 599
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d667af9807691ba9eadb707ea0d3160c
+      internalID: -270547714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 599
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572727a9d55766c82b144565f5fa41f9
+      internalID: 473353211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 599
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2178cf69d04cf892f9b402dd3b96477e
+      internalID: 768084647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a2c59147ba32caa46d9d1b5fa0e95
+      internalID: 530118444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9523099d596170ecb8389483ee96f846
+      internalID: 1916223653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_7
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 258
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd95dc3d67909acfa203bebe0ccc61a
+      internalID: -894094008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 419
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e97c1382c42af798b96295f102dee9
+      internalID: -491184882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 419
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece83d390935d7ef5856ae39fb240f46
+      internalID: 1944729675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1151a5b693a2faf748aadafb472eea95
+      internalID: -21994846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 239
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc687e2ea468f14e789e436373017a81
+      internalID: -1695348782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_12
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 239
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c28a6c94fcd9edc8f767f4df8f07f6
+      internalID: -642740788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 239
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f311f38e6fc68e8d8b2ee94260141ccc
+      internalID: -1858968024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_14
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 239
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847076cdeef43774a98ed2498a242225
+      internalID: 1431633151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e25b96b1e77a4b6aad2ed09b5a09a0d
+      internalID: 1812667150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 59
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e659ccb0ebc40487b714d5e4c227bd7
+      internalID: 674981528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd3f3b87bcb6c9279d78ec6c83dd88a
+      internalID: -2044619986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 59
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383ff2ad57fc016c5a41939edbbaeef2
+      internalID: -1966139050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes
+        Sonic Mania-Style_19
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826f8fa856be3dac6a25e6be53fb781b
+      internalID: -1402665218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9aead216565a32efdaa95856a415231a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":180.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_0: -8210427167007496381
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_1: -1200576046
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_10: -21994846
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_11: -1695348782
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_12: -642740788
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_13: -1858968024
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_14: 1431633151
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_15: 1812667150
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_16: 674981528
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_17: -2044619986
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_18: -1966139050
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_19: -1402665218
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_2: -270547714
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_3: 473353211
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_4: 768084647
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_5: 530118444
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_6: 1916223653
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_7: -894094008
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_8: -491184882
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Chunks Prototypes Sonic Mania-Style_9: 1944729675
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
