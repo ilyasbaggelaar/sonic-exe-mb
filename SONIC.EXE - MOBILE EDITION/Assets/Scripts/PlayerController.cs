@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Runtime.CompilerServices;
+using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,7 +12,6 @@ public class PlayerController : MonoBehaviour
     public float deceleration = 7f;
     public float turnResistance = 12f;
     public float maxSpeed = 20f;
-    public float friction = 3f;
 
     [Header("Jump Settings")]
     public float jumpForce = 12f;
@@ -20,33 +21,137 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private float moveInput;
-    private bool isGrounded;
+    public bool isGrounded { get; private set; }
+
+    private bool hasJumped;
 
     private Animator animator;
 
-    [SerializeField] private float maxSlopeAngle = 45f;
-    [SerializeField] private Transform slopeCheck;
-    [SerializeField] private float slopeCheckDistance = 0.3f;
+
+    public AudioSource audioData;
+
+    public AudioSource damageSound;
+
+    public AudioSource deathSound;
+
+    [Header("Ring Settings")]
+
+    public int ringCount = 10;
+
+    public event Action OnRingsLost;
+    public event Action OnPlayerDeath;
+
+    [Header("Death screen")]
+
+    public Sprite deathSprite;
+    public GameObject gameOverImage;
+
+    private SpriteRenderer spriteRenderer;
+
+    private CircleCollider2D circleCollider;
+
+    private bool isDead = false;
+
+    //private Vector2 deathVelocity = new Vector2(0, 8f);
+
 
     void Awake()
     {
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        circleCollider = GetComponent<CircleCollider2D>();
         rb.freezeRotation = true;
+        audioData.Stop();
 
     }
+    private IEnumerator HandleDeathAnimation()
+    {
+        isDead = true;
+        FindFirstObjectByType<PlayerFollower>().isFollowing = false;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0;
+        moveInput = 0;
+        animator.enabled = false;
+        circleCollider.enabled = false;
+
+        spriteRenderer.sprite = deathSprite;
+
+        yield return new WaitForSeconds(0.1f);
+
+        float t = 0f;
+        float duration = 1.5f;
+
+        //MathF.Sin gives you the heigh of a point going around a cricle.
+        //Imagine drawing a cricle with a pen, if you walkk around the circle, Sin tells you
+        // how high you are. It's there to smoothen out calculations through PI.
+        //pi is perfect because it gives youa perfect arc. anything less would make the sin
+        //curve not smooth, or more would make it wiggly. 
+        //this is good for bounces, a jump, a bobbing animation or a sinewave-style float.
+
+        while (t < duration)
+        {
+            float y = Mathf.Sin(Mathf.PI * (t / duration)) * 6f;
+            transform.position += Vector3.up * y * Time.deltaTime;
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        rb.gravityScale = 2f;
+        rb.linearVelocity = new Vector2(0, -10f);
+
+        yield return new WaitForSeconds(2f);
+
+        if (gameOverImage != null)
+        {
+            gameOverImage.SetActive(true);
+        }
+    }
+    public void TakeDamage()
+
+    {
+        if (isDead) return;
+        if (ringCount > 0)
+        {
+            ringCount = 0;
+            OnRingsLost?.Invoke();
+            Debug.Log("rings lost");
+            damageSound.Play();
+            rb.linearVelocity = new Vector2(-8f, -8f);
+        }
+        else
+        {
+            OnPlayerDeath?.Invoke();
+            Debug.Log("you've died");
+            deathSound.Play();
+            StartCoroutine(HandleDeathAnimation());
+        }
+    }
+
 
     void Update()
     {
 
+        if (isDead) return;
+
         moveInput = Input.GetAxisRaw("Horizontal");
-        animator.SetBool("isRunning", moveInput != 0);
+        animator.SetBool("isRunning", moveInput != 0 && isGrounded);
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            hasJumped = true;
+            audioData.Play();
         }
+
+
+
+        animator.SetBool("isJumping", !isGrounded);
 
 
         //animation / sprite flip
@@ -69,45 +174,56 @@ public class PlayerController : MonoBehaviour
                 Time.timeScale = 1.0f;
             }
         }
+
+
     }
 
     void FixedUpdate()
     {
-        // Check if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // Always allow movement; freeze rotation only
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-
-
-
-
-        // Friction when idle
+        // Deceleration logic if no input
         if (isGrounded && moveInput == 0)
         {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            // Apply deceleration manually as a force
+            float decelForce = -Mathf.Sign(rb.linearVelocity.x) * deceleration;
+            rb.linearVelocity = new Vector2(
+                Mathf.MoveTowards(rb.linearVelocity.x, 0f, Mathf.Abs(decelForce) * Time.fixedDeltaTime),
+                rb.linearVelocity.y
+            );
 
-            if (rb.linearVelocity.magnitude > 0.01f)
+            // Once velocity is basically zero, freeze position
+            if (Mathf.Abs(rb.linearVelocity.x) < 0.05f)
             {
-                rb.linearVelocity = Vector2.zero;
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
             }
+
             return;
         }
-        else
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
 
+
+
+
+        // ✅ Keep your acceleration system
         float targetSpeed = moveInput * maxSpeed;
         float speedDiff = targetSpeed - rb.linearVelocity.x;
-        // float accelRate = 0f;
 
         float accelRate = (moveInput != 0)
-        ? (Mathf.Sign(moveInput) != Mathf.Sign(rb.linearVelocity.x) ? turnResistance : acceleration)
-        : deceleration;
+            ? (Mathf.Sign(moveInput) != Mathf.Sign(rb.linearVelocity.x) ? turnResistance : acceleration)
+            : deceleration;
 
         float movement = accelRate * speedDiff * Time.fixedDeltaTime;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x + movement, rb.linearVelocity.y);
+        float newX = rb.linearVelocity.x + movement;
 
+        // ✅ Clamp to max speed (in case of overshoot)
+        newX = Mathf.Clamp(newX, -maxSpeed, maxSpeed);
+
+        // ✅ FORCE X velocity to ignore slope-induced changes, preserve vertical Y
+        rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
     }
 }
 

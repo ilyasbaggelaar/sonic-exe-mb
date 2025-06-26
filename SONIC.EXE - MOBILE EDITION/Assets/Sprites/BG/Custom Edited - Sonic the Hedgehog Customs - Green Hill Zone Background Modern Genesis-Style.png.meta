@@ -1,0 +1,1216 @@
+fileFormatVersion: 2
+guid: f11b0396f9ea1aaff984813eefa7541c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3414404696930442360
+    second: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+      Modern Genesis-Style_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8832908b4099d90d0800000000000000
+      internalID: -3414404696930442360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 832
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608c8bd22f7466fcb4555611252fd32
+      internalID: 1097492053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 832
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae3fec987fd7a9448099e5f5b555cf2
+      internalID: 1292066193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 832
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b943a3acbbe611dbda0a1c40d753ca10
+      internalID: -1056450024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 832
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37492a17769b7c2d9f96b52b8141d54
+      internalID: -2018010786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 727
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6e1951a5209a5e58322747919e06bb
+      internalID: -553036801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 727
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa43e512909584c8e8927c96e8d2355d
+      internalID: 940115491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 732
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8a8750d59363bcca2fdeb92438e97d
+      internalID: -864209711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 727
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5049051, y: 0.47446167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae516713c177ed618499699df09ecab
+      internalID: -869425844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 727
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1455747a3014871f1ba046428bf33eae
+      internalID: 1026029091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 648
+        width: 127
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f293977055b0d449be05e042a7e803b
+      internalID: 1604443263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 648
+        width: 128
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967a7e85013ec599484a6a1f56877650
+      internalID: -1780455772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 632
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b4ed0672064ee1bb166aada1e8c34e
+      internalID: -593644871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 648
+        width: 128
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e52a267b5692fb47ab86b2a5fd8af2a
+      internalID: -1120875856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 648
+        width: 127
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661b8d588cfa74a549ef8bc43974b5a3
+      internalID: 1372065889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32984a715b461d19b853d69fe2f4567
+      internalID: 1524895368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 532
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f43b844f9c057e7b55c4bebf10e5a3
+      internalID: 33213596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 532
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f010448ea9a6a3987a570500f8dfbcac
+      internalID: -691587531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 532
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1df4209c50b785caeb50bd64707be4
+      internalID: 910285411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 532
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed190234230cd2bd8f3ed4476d85a2b
+      internalID: 539456959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c86938c7c79eaa9881f93f2d7f8961b
+      internalID: 1661164713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 432
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6b512bdef1bec598618bcb40477514
+      internalID: -2096776817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 432
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7615bee50293bfa58a06b862927c68cd
+      internalID: 889740066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 432
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5d2e8d2b5c35b509060a6222455fcc
+      internalID: 45094419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 432
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f64720fc44fc7c68e1842e9a21a748
+      internalID: 274193990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_25
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 337
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1254d5265380889ea20e9a3e40b52e6
+      internalID: 103344429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 332
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3356e9e667e0e5768213afbc32674cf
+      internalID: 185324119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_27
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 336
+        width: 127
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029a3e72d61aa4550a8bcd2f5427d453
+      internalID: -2051194000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_28
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 337
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5677ddf0a3efc9f019e52981cd8d3164
+      internalID: -1658374486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_29
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 337
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429e192a26eb41a47a50af0ccd0f7f81
+      internalID: -614241639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22e205334daa0ad89859cacd802f1d6
+      internalID: 1074799829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 232
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94ae2f488871c0c091f8404cdaa7c4d
+      internalID: -126900253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 232
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6c7feedc6e9352b835ef222cc868bc
+      internalID: 1180961079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_33
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 207
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9841b9eeb11f170987741a6a0185e5
+      internalID: -1727269277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_34
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 207
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350bd3161f9fae8948391f20c1e62bc9
+      internalID: -1721518178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_35
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 207
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fae180116cbb6fdbbb7a81585d374e5
+      internalID: 1470439539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 207
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3028e8147e6b483cf8853d1c0501916a
+      internalID: -1832957869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0002b3951fa7657694992e235a9cd04
+      internalID: 695841098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2107d634d606a3b08bec3d9631fc97dc
+      internalID: 1078466836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_39
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 132
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bdcb5ec96fd5d318f5a0ac4401809c
+      internalID: -326842813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_40
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 77
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084cd6ac74226581b968e30882c2d390
+      internalID: 547114536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_41
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 77
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a0ddacabed340ea9b540726789f09
+      internalID: 453799799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_42
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 77
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfb308b9e348835fbc095e014857c25
+      internalID: 935587709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 32
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8106f97f902e916e18035e02c4168884
+      internalID: 1432395520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background
+        Modern Genesis-Style_44
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 77
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e75b1445ccfb3d6b9ea5546cd12cdf6
+      internalID: 1869199775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f46de1fc0268b7fc1b9a16cf3c5aa411
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_0: -3414404696930442360
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_1: 1097492053
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_10: 1604443263
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_11: -1780455772
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_12: -593644871
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_13: -1120875856
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_14: 1372065889
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_15: 1524895368
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_16: 33213596
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_17: -691587531
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_18: 910285411
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_19: 539456959
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_2: 1292066193
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_20: 1661164713
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_21: -2096776817
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_22: 889740066
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_23: 45094419
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_24: 274193990
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_25: 103344429
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_26: 185324119
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_27: -2051194000
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_28: -1658374486
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_29: -614241639
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_3: -1056450024
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_30: 1074799829
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_31: -126900253
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_32: 1180961079
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_33: -1727269277
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_34: -1721518178
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_35: 1470439539
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_36: -1832957869
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_37: 695841098
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_38: 1078466836
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_39: -326842813
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_4: -2018010786
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_40: 547114536
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_41: 453799799
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_42: 935587709
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_43: 1432395520
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_44: 1869199775
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_5: -553036801
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_6: 940115491
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_7: -864209711
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_8: -869425844
+      Custom Edited - Sonic the Hedgehog Customs - Green Hill Zone Background Modern Genesis-Style_9: 1026029091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
