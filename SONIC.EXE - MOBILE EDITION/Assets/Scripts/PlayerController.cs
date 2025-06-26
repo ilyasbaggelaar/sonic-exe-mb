@@ -3,6 +3,7 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
 
+    public AudioSource backGroundMusic;
 
     public AudioSource audioData;
 
@@ -65,7 +67,10 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
         rb.freezeRotation = true;
+        backGroundMusic.volume = 0.4f;
         audioData.Stop();
+        damageSound.Stop();
+        deathSound.Stop();
 
     }
     private IEnumerator HandleDeathAnimation()
@@ -111,6 +116,26 @@ public class PlayerController : MonoBehaviour
             gameOverImage.SetActive(true);
         }
     }
+
+    private IEnumerator VolumefadeOut()
+    {
+        float startVolume = backGroundMusic.volume;
+        float duration = 1f;
+        float t = 0f;
+
+        while (t < duration)
+        {
+            backGroundMusic.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+            t += Time.deltaTime;
+
+            yield return null;
+
+        }
+
+        backGroundMusic.mute = true;
+
+           Debug.Log("Volume faded to 0.");
+    }
     public void TakeDamage()
 
     {
@@ -129,6 +154,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("you've died");
             deathSound.Play();
             StartCoroutine(HandleDeathAnimation());
+            StartCoroutine(VolumefadeOut());
         }
     }
 
