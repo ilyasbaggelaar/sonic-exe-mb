@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isDead = false;
 
+    private bool invFrame = false;
+
     //private Vector2 deathVelocity = new Vector2(0, 8f);
 
 
@@ -136,17 +138,33 @@ public class PlayerController : MonoBehaviour
 
            Debug.Log("Volume faded to 0.");
     }
-    public void TakeDamage()
+    public void TakeDamage(Vector2 sourcePosition)
 
     {
+        if (invFrame) return;
         if (isDead) return;
+
+         StartCoroutine(HandleDamageKnockback(sourcePosition));
+    }
+
+    private IEnumerator HandleDamageKnockback(Vector2 sourcePosition)
+    {
+        isDead = true;
+        invFrame = true;
+
+        Vector2 knockBackDirection = (transform.position - (Vector3)sourcePosition).normalized;
+        Vector2 knockBackForce = new Vector2(knockBackDirection.x * 10f, 8f);
+
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 2f;
+        rb.AddForce(knockBackForce, ForceMode2D.Impulse);
+
         if (ringCount > 0)
         {
             ringCount = 0;
             OnRingsLost?.Invoke();
             Debug.Log("rings lost");
             damageSound.Play();
-            rb.linearVelocity = new Vector2(-8f, -8f);
         }
         else
         {
@@ -155,10 +173,15 @@ public class PlayerController : MonoBehaviour
             deathSound.Play();
             StartCoroutine(HandleDeathAnimation());
             StartCoroutine(VolumefadeOut());
+            yield break; // Skip re-enabling control
         }
-    }
 
+        yield return new WaitForSeconds(0.6f);
 
+        isDead = false;
+        yield return new WaitForSeconds(3f);
+        invFrame = false;
+}
     void Update()
     {
 
@@ -206,6 +229,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        if (isDead) return;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         // Always allow movement; freeze rotation only
