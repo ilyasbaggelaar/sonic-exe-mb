@@ -1,0 +1,4 @@
+repository "SONIC.EXE - MOBILE EDITION/SONIC.EXE - MOBILE EDITION@5772800556712@cloud"
+  path "/"
+    br "/main"
+    co "/main"

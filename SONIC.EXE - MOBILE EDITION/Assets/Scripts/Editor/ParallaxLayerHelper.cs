@@ -33,7 +33,7 @@ public class ParallaxLayerHelper : Editor
             }
 
             float avgSpacing = totalSpacing / count;
-            layer.spriteWidth = avgSpacing;
+            //layer.totalWidth = avgSpacing;
 
             Debug.Log($"📏 Sprite Width set to: {avgSpacing:F4} (based on spacing of {count} sprites)");
         }

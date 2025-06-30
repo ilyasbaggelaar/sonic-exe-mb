@@ -259,6 +259,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1397,7 +1423,58 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_0: 4855820587709235687
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_1: 6426466509917049718
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_10: -1119269450236864321
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_11: -8591619857019219829
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_12: 8810743193281571705
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_13: 1807738949415082778
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_14: -724649954814012311
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_15: 2088771016211733366
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_16: 7426857393332841675
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_17: 4877086700244402254
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_18: 6836975209008766438
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_19: -4573920466451264695
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_2: -6475096373785873000
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_20: 7997752777542158339
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_21: 9093959190486625253
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_22: 2057651379544199421
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_23: -2626903805604057978
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_24: -3634410934898704402
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_25: 4566926986338996614
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_26: -1311612819864789354
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_27: 3057815831685932406
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_28: -1339959729162054482
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_29: 4405827842555591699
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_3: -3055613567644553260
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_30: -37301754087004983
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_31: -1845378073146540185
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_32: 7742082135533075875
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_33: 1295926060222001329
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_34: -6838487830669580724
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_35: 4064740850288464122
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_36: 828795864844943961
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_37: -6135015896495466956
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_38: 1338909848533089590
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_39: -3104192635858366626
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_4: 3256353761551024454
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_40: -961701058104559239
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_41: 4064833789136053230
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_42: -613667636028695314
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_43: 1897805419590038424
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_44: 9194657736453579333
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_45: 4754600879900889210
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_46: 854776814127271801
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_47: -5420769721467422384
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_48: 3950430624849247673
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_49: -5383187424534527086
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_5: 7902866089022154925
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_50: -7188115509133130091
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_6: -1188190867118759411
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_7: 2528272048475952058
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_8: 5023695702918228136
+      pngtree-3d-blue-gradient-game-over-design-png-image_5982417_9: 2523741295242444904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
