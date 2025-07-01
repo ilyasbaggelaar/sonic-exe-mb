@@ -16,7 +16,7 @@ namespace _Scripts
         {
             //Getting the starting X position of sprite.
             _startingPos = transform.position.x;
-            //Getting the length of the sprites.
+            //Getting the length of the sprites + adding padding so it can loop.
             _lengthOfSprite = GetComponent<SpriteRenderer>().bounds.size.x + 24f;
         }
 
@@ -25,14 +25,14 @@ namespace _Scripts
         private void Update()
         {
             Vector3 Position = MainCamera.transform.position;
-            float Temp = Position.x * (1 - AmountOfParallax);
-            float Distance = Position.x * AmountOfParallax;
+            float Temp = Position.x * (1 - AmountOfParallax); // howmuch the camera has moved based on the parallax amount.
+            float Distance = Position.x * AmountOfParallax; // how much the sprite should move based on the camera position and the parallax amount.
 
             Vector3 NewPosition = new Vector3(_startingPos + Distance, transform.position.y, transform.position.z);
 
             transform.position = NewPosition;
 
-            if (Temp > _startingPos + (_lengthOfSprite / 2))
+            if (Temp > _startingPos + (_lengthOfSprite / 2)) //this halfs the sprite length so it can loop.
             {
                 _startingPos += _lengthOfSprite;
             }

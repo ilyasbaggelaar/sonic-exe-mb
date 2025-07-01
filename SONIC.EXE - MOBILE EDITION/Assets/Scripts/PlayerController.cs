@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -38,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     public int ringCount = 10;
 
+   public static int lives = 3;
+
     public event Action OnRingsLost;
     public event Action OnPlayerDeath;
 
@@ -66,6 +70,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
+
+
+        if (SaveManager.HasSaveData())
+        {
+            SaveManager.Load(out lives, out ringCount, out _);
+            Debug.Log($"Loaded: {lives}, rings: {ringCount}");
+        }
+
         rb.freezeRotation = true;
         backGroundMusic.volume = 0.4f;
         audioData.Stop();
@@ -73,9 +85,13 @@ public class PlayerController : MonoBehaviour
         deathSound.Stop();
 
     }
-    private IEnumerator HandleDeathAnimation()
+    public IEnumerator HandleDeathAnimation()
     {
         isDead = true;
+
+                    OnPlayerDeath?.Invoke();
+            Debug.Log("you've died");
+            deathSound.Play();
         FindFirstObjectByType<PlayerFollower>().isFollowing = false;
 
         rb.linearVelocity = Vector2.zero;
@@ -109,9 +125,16 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 2f;
         rb.linearVelocity = new Vector2(0, -10f);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
-        if (gameOverImage != null)
+        if (lives > 0)
+        {
+            lives--;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Lives Left:" + lives);
+        }
+
+        else if (lives == 0)
         {
             gameOverImage.SetActive(true);
         }
@@ -166,9 +189,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            OnPlayerDeath?.Invoke();
-            Debug.Log("you've died");
-            deathSound.Play();
+
             StartCoroutine(HandleDeathAnimation());
             StartCoroutine(VolumefadeOut());
             yield break; // Skip re-enabling control
@@ -179,7 +200,12 @@ public class PlayerController : MonoBehaviour
         isDead = false;
         yield return new WaitForSeconds(3f);
         invFrame = false;
-}
+    }
+
+    void OnApplicationQuit()
+    {
+        SaveManager.Save(lives, ringCount);   
+    }
     void Update()
     {
 
