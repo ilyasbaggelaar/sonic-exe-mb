@@ -1,71 +1,44 @@
+using System;
 using UnityEngine;
 
-public class ParallaxLayer : MonoBehaviour
+namespace _Scripts
 {
-    public Transform player; // Reference to the camera
-    public float parallaxFactor = 0.5f; // Default value, can be adjusted per layer
-    public float spriteWidth = 1.27f;
-    public float smoothing = 5f; // Smoothing factor for background movement
-
-    private Transform[] sprites;
-    private float lastPlayerX;
-    private float totalWidth;
-    private Vector3 targetPosition; // Target position for smooth movement
-
-    void Start()
+    public class ParallaxEffect : MonoBehaviour
     {
-        if (player == null)
+        private float _startingPos, //This is the starting position of the sprites.
+            _lengthOfSprite; //This is the length of the sprites.
+        public float AmountOfParallax; //This is amount of parallax scroll. 
+        public Camera MainCamera; //Reference of the camera.
+
+
+
+        private void Start()
         {
-            Debug.LogError("Camera not assigned to ParallaxLayer.");
-            enabled = false;
-            return;
+            //Getting the starting X position of sprite.
+            _startingPos = transform.position.x;
+            //Getting the length of the sprites.
+            _lengthOfSprite = GetComponent<SpriteRenderer>().bounds.size.x + 24f;
         }
 
-        int count = transform.childCount;
-        sprites = new Transform[count];
 
-        for (int i = 0; i < count; i++)
-            sprites[i] = transform.GetChild(i);
 
-        lastPlayerX = player.position.x;
-
-        // Calculate the total width of all sprites, including the extra ones
-        totalWidth = spriteWidth * count;
-
-        Debug.Log($"Total width of parallax layer: {totalWidth}");
-        Debug.Log($"Sprite width: {spriteWidth}");
-        Debug.Log($"Number of sprites: {count}");
-
-        // Initialize target position
-        targetPosition = transform.position;
-    }
-
-    void Update()
-    {
-        float deltaX = player.position.x - lastPlayerX;
-        lastPlayerX = player.position.x;
-
-        // Calculate target position for smooth movement
-        float backgroundMovement = deltaX * parallaxFactor;
-        targetPosition += Vector3.right * backgroundMovement;
-
-        // Smoothly move the layer towards the target position
-        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * smoothing);
-
-        // Looping logic using total width
-        float loopThreshold = totalWidth / 2f; // Adjust threshold for looping
-        foreach (Transform sprite in sprites)
+        private void Update()
         {
-            float spriteLeftEdge = sprite.position.x - spriteWidth / 2f;
-            float spriteRightEdge = sprite.position.x + spriteWidth / 2f;
+            Vector3 Position = MainCamera.transform.position;
+            float Temp = Position.x * (1 - AmountOfParallax);
+            float Distance = Position.x * AmountOfParallax;
 
-            if (player.position.x - spriteRightEdge > loopThreshold)
+            Vector3 NewPosition = new Vector3(_startingPos + Distance, transform.position.y, transform.position.z);
+
+            transform.position = NewPosition;
+
+            if (Temp > _startingPos + (_lengthOfSprite / 2))
             {
-                sprite.position += Vector3.right * totalWidth;
+                _startingPos += _lengthOfSprite;
             }
-            else if (spriteLeftEdge - player.position.x > loopThreshold)
+            else if (Temp < _startingPos - (_lengthOfSprite / 2))
             {
-                sprite.position -= Vector3.right * totalWidth;
+                _startingPos -= _lengthOfSprite;
             }
         }
     }

@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23896390}
   - component: {fileID: 23896391}
+  - component: {fileID: 23896392}
   m_Layer: 0
   m_Name: SkyClouds04 (1)
   m_TagString: Untagged
@@ -206,6 +207,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &23896392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23896389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &44349008
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 44349009}
   - component: {fileID: 44349010}
+  - component: {fileID: 44349011}
   m_Layer: 0
   m_Name: Sky03
   m_TagString: Untagged
@@ -232,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 44349008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.54, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 2.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,6 +309,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &44349011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44349008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &45545361
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45545363}
   - component: {fileID: 45545362}
+  - component: {fileID: 45545364}
   m_Layer: 0
   m_Name: Sky02
   m_TagString: Untagged
@@ -374,12 +405,26 @@ Transform:
   m_GameObject: {fileID: 45545361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 1.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 311428854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45545364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45545361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &89423277
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 112103463}
   - component: {fileID: 112103462}
+  - component: {fileID: 112103464}
   m_Layer: 0
   m_Name: MountainWater03
   m_TagString: Untagged
@@ -732,6 +778,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460103492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112103464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112103461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &131275097
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164449326}
   - component: {fileID: 164449327}
+  - component: {fileID: 164449328}
   m_Layer: 0
   m_Name: SkyClouds02 (1)
   m_TagString: Untagged
@@ -907,6 +968,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &164449328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164449325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &175995552
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175995553}
   - component: {fileID: 175995554}
+  - component: {fileID: 175995555}
   m_Layer: 0
   m_Name: Sky04
   m_TagString: Untagged
@@ -933,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 175995552}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.81, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 3.81, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -994,6 +1070,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &175995555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175995552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &183802050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183802051}
   - component: {fileID: 183802052}
+  - component: {fileID: 183802053}
   m_Layer: 0
   m_Name: MountainWater04 (1)
   m_TagString: Untagged
@@ -1081,6 +1172,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &183802053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183802050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &302792123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 302792124}
   - component: {fileID: 302792125}
+  - component: {fileID: 302792126}
   m_Layer: 0
   m_Name: Mountain01 (4)
   m_TagString: Untagged
@@ -1168,6 +1274,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &302792126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302792123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &311428853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1297,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311428854}
-  - component: {fileID: 311428855}
   m_Layer: 0
   m_Name: SkyLayer
   m_TagString: Untagged
@@ -1194,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 311428853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1208,22 +1327,6 @@ Transform:
   - {fileID: 468408802}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &311428855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311428853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.1
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &345177186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360719792}
   - component: {fileID: 360719793}
+  - component: {fileID: 360719794}
   m_Layer: 0
   m_Name: SkyClouds03 (1)
   m_TagString: Untagged
@@ -1649,6 +1753,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &360719794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360719791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &376894177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392772644}
   - component: {fileID: 392772645}
+  - component: {fileID: 392772646}
   m_Layer: 0
   m_Name: Mountain01
   m_TagString: Untagged
@@ -1824,6 +1943,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &392772646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392772643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &395088066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445493024}
   - component: {fileID: 445493025}
+  - component: {fileID: 445493026}
   m_Layer: 0
   m_Name: Sky02 (1)
   m_TagString: Untagged
@@ -2067,7 +2201,7 @@ Transform:
   m_GameObject: {fileID: 445493023}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3500004, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 6.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2128,6 +2262,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &445493026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445493023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &460103491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,7 +2285,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 460103492}
-  - component: {fileID: 460103493}
   m_Layer: 0
   m_Name: WaterMountain
   m_TagString: Untagged
@@ -2168,22 +2315,6 @@ Transform:
   - {fileID: 183802051}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &460103493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460103491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.8
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &468408801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468408802}
   - component: {fileID: 468408803}
+  - component: {fileID: 468408804}
   m_Layer: 0
   m_Name: Sky04 (1)
   m_TagString: Untagged
@@ -2210,7 +2342,7 @@ Transform:
   m_GameObject: {fileID: 468408801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.89, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 8.889999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2271,6 +2403,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &468408804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468408801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &478178746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478178747}
   - component: {fileID: 478178748}
+  - component: {fileID: 478178749}
   m_Layer: 0
   m_Name: Water01 (1)
   m_TagString: Untagged
@@ -2358,6 +2505,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &478178749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478178746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &488350206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,7 +2528,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488350207}
-  - component: {fileID: 488350208}
   m_Layer: 0
   m_Name: SkyLayer (1)
   m_TagString: Untagged
@@ -2384,7 +2544,7 @@ Transform:
   m_GameObject: {fileID: 488350206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalPosition: {x: 0, y: 3.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2398,22 +2558,6 @@ Transform:
   - {fileID: 1118666287}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488350208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488350206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.1
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &499217532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499217533}
   - component: {fileID: 499217534}
+  - component: {fileID: 499217535}
   m_Layer: 0
   m_Name: Water04 (1)
   m_TagString: Untagged
@@ -2501,6 +2646,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &499217535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499217532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &506437432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509555873}
   - component: {fileID: 509555874}
+  - component: {fileID: 509555875}
   m_Layer: 0
   m_Name: Sky02
   m_TagString: Untagged
@@ -2615,7 +2775,7 @@ Transform:
   m_GameObject: {fileID: 509555872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 1.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2676,6 +2836,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &509555875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509555872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,6 +3012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528813110}
   - component: {fileID: 528813111}
+  - component: {fileID: 528813112}
   m_Layer: 0
   m_Name: Mountain01 (3)
   m_TagString: Untagged
@@ -2915,6 +3090,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &528813112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528813109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &581920540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587738338}
   - component: {fileID: 587738339}
+  - component: {fileID: 587738340}
   m_Layer: 0
   m_Name: Sky01 (1)
   m_TagString: Untagged
@@ -3118,7 +3308,7 @@ Transform:
   m_GameObject: {fileID: 587738337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0800004, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 5.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3179,6 +3369,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &587738340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587738337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,6 +3606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687080612}
   - component: {fileID: 687080613}
+  - component: {fileID: 687080614}
   m_Layer: 0
   m_Name: Sky03 (1)
   m_TagString: Untagged
@@ -3418,7 +3623,7 @@ Transform:
   m_GameObject: {fileID: 687080611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6200004, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 7.62, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3479,6 +3684,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &687080614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687080611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &689221805
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +3707,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 689221806}
-  - component: {fileID: 689221807}
   m_Layer: 0
   m_Name: backgroundClouds
   m_TagString: Untagged
@@ -3519,22 +3737,6 @@ Transform:
   - {fileID: 23896390}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &689221807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689221805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.3
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &710424233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,6 +3747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710424235}
   - component: {fileID: 710424234}
+  - component: {fileID: 710424236}
   m_Layer: 0
   m_Name: Water02
   m_TagString: Untagged
@@ -3622,6 +3825,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241216515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710424236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710424233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &713404498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,6 +3849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713404499}
   - component: {fileID: 713404500}
+  - component: {fileID: 713404501}
   m_Layer: 0
   m_Name: MountainWater02 (1)
   m_TagString: Untagged
@@ -3709,6 +3927,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &713404501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713404498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &720657915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +4158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759226349}
   - component: {fileID: 759226350}
+  - component: {fileID: 759226351}
   m_Layer: 0
   m_Name: Sky04
   m_TagString: Untagged
@@ -3942,7 +4175,7 @@ Transform:
   m_GameObject: {fileID: 759226348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.81, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 3.81, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4003,6 +4236,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &759226351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759226348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &767964769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,6 +4348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 796338200}
   - component: {fileID: 796338199}
+  - component: {fileID: 796338201}
   m_Layer: 0
   m_Name: MountainWater04
   m_TagString: Untagged
@@ -4178,6 +4426,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460103492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &796338201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796338198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &820634137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,6 +4583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855312666}
   - component: {fileID: 855312667}
+  - component: {fileID: 855312668}
   m_Layer: 0
   m_Name: Sky02
   m_TagString: Untagged
@@ -4337,7 +4600,7 @@ Transform:
   m_GameObject: {fileID: 855312665}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 1.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4398,6 +4661,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &855312668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855312665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &874878701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,6 +4796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881385478}
   - component: {fileID: 881385477}
+  - component: {fileID: 881385479}
   m_Layer: 0
   m_Name: Sky01
   m_TagString: Untagged
@@ -4590,12 +4868,26 @@ Transform:
   m_GameObject: {fileID: 881385476}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 311428854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881385479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881385476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &897049861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,6 +4898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897049862}
   - component: {fileID: 897049863}
+  - component: {fileID: 897049864}
   m_Layer: 0
   m_Name: MountainWater01 (1)
   m_TagString: Untagged
@@ -4683,6 +4976,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &897049864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897049861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &948792922
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,6 +5000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948792923}
   - component: {fileID: 948792924}
+  - component: {fileID: 948792925}
   m_Layer: 0
   m_Name: Sky01 (1)
   m_TagString: Untagged
@@ -4709,7 +5017,7 @@ Transform:
   m_GameObject: {fileID: 948792922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0800004, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 5.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4770,6 +5078,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &948792925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948792922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &959884347
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,6 +5102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959884349}
   - component: {fileID: 959884348}
+  - component: {fileID: 959884350}
   m_Layer: 0
   m_Name: MountainWater02
   m_TagString: Untagged
@@ -4857,6 +5180,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460103492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959884350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959884347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1014602860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +5204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014602862}
   - component: {fileID: 1014602861}
+  - component: {fileID: 1014602863}
   m_Layer: 0
   m_Name: Water01
   m_TagString: Untagged
@@ -4944,6 +5282,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241216515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014602863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014602860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1039888368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +5306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1039888369}
   - component: {fileID: 1039888370}
+  - component: {fileID: 1039888371}
   m_Layer: 0
   m_Name: Mountain01 (2)
   m_TagString: Untagged
@@ -5031,6 +5384,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1039888371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039888368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1053416553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,6 +5673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118666287}
   - component: {fileID: 1118666288}
+  - component: {fileID: 1118666289}
   m_Layer: 0
   m_Name: Sky04 (1)
   m_TagString: Untagged
@@ -5322,7 +5690,7 @@ Transform:
   m_GameObject: {fileID: 1118666286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.89, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 8.889999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5383,6 +5751,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1118666289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118666286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1156200025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,6 +5775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156200026}
   - component: {fileID: 1156200027}
+  - component: {fileID: 1156200028}
   m_Layer: 0
   m_Name: Sky04 (1)
   m_TagString: Untagged
@@ -5409,7 +5792,7 @@ Transform:
   m_GameObject: {fileID: 1156200025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.89, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 8.889999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5470,6 +5853,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1156200028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156200025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1165599742
 GameObject:
   m_ObjectHideFlags: 0
@@ -5480,6 +5877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1165599743}
   - component: {fileID: 1165599744}
+  - component: {fileID: 1165599745}
   m_Layer: 0
   m_Name: Sky03
   m_TagString: Untagged
@@ -5496,7 +5894,7 @@ Transform:
   m_GameObject: {fileID: 1165599742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.54, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 2.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5557,6 +5955,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1165599745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165599742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1167440018
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,6 +5979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167440019}
   - component: {fileID: 1167440020}
+  - component: {fileID: 1167440021}
   m_Layer: 0
   m_Name: Sky03 (1)
   m_TagString: Untagged
@@ -5583,7 +5996,7 @@ Transform:
   m_GameObject: {fileID: 1167440018}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6200004, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 7.62, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5644,6 +6057,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1167440021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167440018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1174923955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,6 +6160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1199573153}
   - component: {fileID: 1199573154}
+  - component: {fileID: 1199573155}
   m_Layer: 0
   m_Name: SkyClouds04
   m_TagString: Untagged
@@ -5810,6 +6238,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1199573155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199573152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1219064870
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,7 +6349,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1241216515}
-  - component: {fileID: 1241216516}
   m_Layer: 0
   m_Name: WaterLayer
   m_TagString: Untagged
@@ -5938,22 +6379,6 @@ Transform:
   - {fileID: 499217533}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1241216516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241216514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 1
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &1245926091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5963,7 +6388,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1245926092}
-  - component: {fileID: 1245926093}
   m_Layer: 0
   m_Name: SkyLayer (2)
   m_TagString: Untagged
@@ -5994,22 +6418,6 @@ Transform:
   - {fileID: 1156200026}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1245926093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245926091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.1
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &1247490543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6020,6 +6428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247490544}
   - component: {fileID: 1247490545}
+  - component: {fileID: 1247490546}
   m_Layer: 0
   m_Name: SkyClouds01
   m_TagString: Untagged
@@ -6097,6 +6506,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!114 &1247490546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247490543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1260923979
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,6 +6530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260923980}
   - component: {fileID: 1260923981}
+  - component: {fileID: 1260923982}
   m_Layer: 0
   m_Name: Mountain01 (1)
   m_TagString: Untagged
@@ -6184,6 +6608,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1260923982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260923979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1312095985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6209,7 +6647,7 @@ Transform:
   m_GameObject: {fileID: 1312095985}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17, y: -2.123, z: 17.59}
+  m_LocalPosition: {x: -17, y: -0.7, z: 17.59}
   m_LocalScale: {x: 3.095052, y: 3.095052, z: 3.095052}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6232,6 +6670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1322225853}
   - component: {fileID: 1322225854}
+  - component: {fileID: 1322225855}
   m_Layer: 0
   m_Name: SkyClouds02
   m_TagString: Untagged
@@ -6309,6 +6748,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1322225855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322225852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1372870955
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +6772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372870956}
   - component: {fileID: 1372870957}
+  - component: {fileID: 1372870958}
   m_Layer: 0
   m_Name: MountainWater03 (1)
   m_TagString: Untagged
@@ -6396,6 +6850,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1372870958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372870955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1374782111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6406,6 +6874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374782113}
   - component: {fileID: 1374782112}
+  - component: {fileID: 1374782114}
   m_Layer: 0
   m_Name: Water03
   m_TagString: Untagged
@@ -6483,6 +6952,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241216515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374782114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374782111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1380983094
 GameObject:
   m_ObjectHideFlags: 0
@@ -6932,6 +7415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526098328}
   - component: {fileID: 1526098329}
+  - component: {fileID: 1526098330}
   m_Layer: 0
   m_Name: SkyClouds01 (1)
   m_TagString: Untagged
@@ -7009,6 +7493,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!114 &1526098330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526098327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1527178052
 GameObject:
   m_ObjectHideFlags: 0
@@ -7192,6 +7690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571465831}
   - component: {fileID: 1571465830}
+  - component: {fileID: 1571465832}
   m_Layer: 0
   m_Name: Water04
   m_TagString: Untagged
@@ -7269,6 +7768,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241216515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1571465832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571465829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1629969292
 GameObject:
   m_ObjectHideFlags: 0
@@ -7279,6 +7792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629969293}
   - component: {fileID: 1629969294}
+  - component: {fileID: 1629969295}
   m_Layer: 0
   m_Name: Water03 (1)
   m_TagString: Untagged
@@ -7356,6 +7870,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1629969295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629969292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1641500322
 GameObject:
   m_ObjectHideFlags: 0
@@ -7366,6 +7894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1641500323}
   - component: {fileID: 1641500324}
+  - component: {fileID: 1641500325}
   m_Layer: 0
   m_Name: Sky01
   m_TagString: Untagged
@@ -7382,7 +7911,7 @@ Transform:
   m_GameObject: {fileID: 1641500322}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7443,6 +7972,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1641500325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641500322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1643668633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7453,6 +7996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643668634}
   - component: {fileID: 1643668635}
+  - component: {fileID: 1643668636}
   m_Layer: 0
   m_Name: Mountain01 (6)
   m_TagString: Untagged
@@ -7530,6 +8074,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1643668636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643668633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1699800044
 GameObject:
   m_ObjectHideFlags: 0
@@ -7540,6 +8098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699800045}
   - component: {fileID: 1699800046}
+  - component: {fileID: 1699800047}
   m_Layer: 0
   m_Name: Sky01 (1)
   m_TagString: Untagged
@@ -7556,7 +8115,7 @@ Transform:
   m_GameObject: {fileID: 1699800044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0800004, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 5.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7617,6 +8176,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1699800047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699800044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1730268382
 GameObject:
   m_ObjectHideFlags: 0
@@ -7804,6 +8377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753568951}
   - component: {fileID: 1753568952}
+  - component: {fileID: 1753568953}
   m_Layer: 0
   m_Name: Sky03 (1)
   m_TagString: Untagged
@@ -7820,7 +8394,7 @@ Transform:
   m_GameObject: {fileID: 1753568950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6200004, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 7.62, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7881,6 +8455,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1753568953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753568950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1773173104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7891,6 +8479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773173106}
   - component: {fileID: 1773173105}
+  - component: {fileID: 1773173107}
   m_Layer: 0
   m_Name: Sky03
   m_TagString: Untagged
@@ -7962,12 +8551,26 @@ Transform:
   m_GameObject: {fileID: 1773173104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.54, y: 1.2481213, z: 0.04000008}
+  m_LocalPosition: {x: 2.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 311428854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1773173107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773173104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1791191317
 GameObject:
   m_ObjectHideFlags: 0
@@ -8153,7 +8756,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827288605}
-  - component: {fileID: 1827288606}
   m_Layer: 0
   m_Name: MountainLayer
   m_TagString: Untagged
@@ -8184,22 +8786,6 @@ Transform:
   - {fileID: 1925179241}
   m_Father: {fileID: 1312095986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1827288606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827288604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1997103387}
-  parallaxFactor: 0.6
-  spriteWidth: 71.12
-  smoothing: 5
 --- !u!1 &1835344339
 GameObject:
   m_ObjectHideFlags: 0
@@ -8210,6 +8796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835344340}
   - component: {fileID: 1835344341}
+  - component: {fileID: 1835344342}
   m_Layer: 0
   m_Name: Mountain01 (5)
   m_TagString: Untagged
@@ -8287,6 +8874,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1835344342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835344339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1838386837
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,6 +8986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842331225}
   - component: {fileID: 1842331226}
+  - component: {fileID: 1842331227}
   m_Layer: 0
   m_Name: SkyClouds03
   m_TagString: Untagged
@@ -8462,6 +9064,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1842331227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842331224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.9
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1871015124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8472,6 +9088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871015125}
   - component: {fileID: 1871015126}
+  - component: {fileID: 1871015127}
   m_Layer: 0
   m_Name: Sky02 (1)
   m_TagString: Untagged
@@ -8488,7 +9105,7 @@ Transform:
   m_GameObject: {fileID: 1871015124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3500004, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 6.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8549,6 +9166,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1871015127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871015124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1877117210
 GameObject:
   m_ObjectHideFlags: 0
@@ -8559,6 +9190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1877117211}
   - component: {fileID: 1877117212}
+  - component: {fileID: 1877117213}
   m_Layer: 0
   m_Name: Water02 (1)
   m_TagString: Untagged
@@ -8636,6 +9268,98 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1877117213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877117210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.1
+  MainCamera: {fileID: 519420031}
+--- !u!1 &1890397244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890397246}
+  - component: {fileID: 1890397245}
+  m_Layer: 0
+  m_Name: deathBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1890397245
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890397244}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 60.538696, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 194.97693, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1890397246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890397244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.80603, y: -10.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907444836
 GameObject:
   m_ObjectHideFlags: 0
@@ -8646,6 +9370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907444838}
   - component: {fileID: 1907444837}
+  - component: {fileID: 1907444839}
   m_Layer: 0
   m_Name: MountainWater01
   m_TagString: Untagged
@@ -8723,6 +9448,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460103492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907444839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907444836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.3
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1925179240
 GameObject:
   m_ObjectHideFlags: 0
@@ -8733,6 +9472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925179241}
   - component: {fileID: 1925179242}
+  - component: {fileID: 1925179243}
   m_Layer: 0
   m_Name: Mountain01 (7)
   m_TagString: Untagged
@@ -8810,6 +9550,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1925179243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925179240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 0.5
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1927057751
 GameObject:
   m_ObjectHideFlags: 0
@@ -8820,6 +9574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1927057753}
   - component: {fileID: 1927057752}
+  - component: {fileID: 1927057754}
   m_Layer: 0
   m_Name: Sky04
   m_TagString: Untagged
@@ -8891,12 +9646,26 @@ Transform:
   m_GameObject: {fileID: 1927057751}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.81, y: 1.275, z: 0.04}
+  m_LocalPosition: {x: 3.81, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 311428854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1927057754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927057751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1930292545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,6 +9676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930292546}
   - component: {fileID: 1930292547}
+  - component: {fileID: 1930292548}
   m_Layer: 0
   m_Name: Sky02 (1)
   m_TagString: Untagged
@@ -8923,7 +9693,7 @@ Transform:
   m_GameObject: {fileID: 1930292545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3500004, y: 1.2804308, z: 0.04000008}
+  m_LocalPosition: {x: 6.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8984,6 +9754,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1930292548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930292545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1 &1935653035
 GameObject:
   m_ObjectHideFlags: 0
@@ -9331,6 +10115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085776559}
   - component: {fileID: 2085776560}
+  - component: {fileID: 2085776561}
   m_Layer: 0
   m_Name: Sky01
   m_TagString: Untagged
@@ -9347,7 +10132,7 @@ Transform:
   m_GameObject: {fileID: 2085776558}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2772, z: 0.03999996}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9408,6 +10193,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2085776561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085776558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a683fc0eb097d219761216baf8779d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmountOfParallax: 1
+  MainCamera: {fileID: 519420031}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -9434,3 +10233,4 @@ SceneRoots:
   - {fileID: 506437434}
   - {fileID: 131275099}
   - {fileID: 1219064872}
+  - {fileID: 1890397246}
