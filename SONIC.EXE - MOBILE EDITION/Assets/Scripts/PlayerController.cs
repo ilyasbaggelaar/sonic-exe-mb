@@ -168,6 +168,25 @@ public class PlayerController : MonoBehaviour
          StartCoroutine(HandleDamageKnockback(sourcePosition));
     }
 
+
+//this could be mundane. same with the above. polish up when everything works fine.
+    public void TakeKnockback(Vector2 sourcePosition)
+    {
+        StartCoroutine(HandleKnockback(sourcePosition));
+    }
+
+    private IEnumerator HandleKnockback(Vector2 sourcePosition)
+    {
+        Vector2 knockbackDirection = (transform.position - (Vector3)sourcePosition).normalized;
+        Vector2 knockbackForce = new Vector2(knockbackDirection.x * 8f, 8f);
+
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 2f;
+        rb.AddForce(knockbackForce, ForceMode2D.Impulse);
+
+        yield break;
+    }
+
     private IEnumerator HandleDamageKnockback(Vector2 sourcePosition)
     {
         isDead = true;

@@ -15,6 +15,8 @@ public class CrabController_01 : MonoBehaviour
 
     private int direction = -1;
 
+    public int lives = 1;
+
     private bool isMoving = false;
 
     private void Start()
@@ -80,7 +82,12 @@ public class CrabController_01 : MonoBehaviour
                 {
                     player.TakeDamage(transform.position);
                 }
-                else
+                else if (lives >= 1)
+                {
+                    lives--;
+                    player.TakeKnockback(transform.position);
+                }
+                else if (lives == 0)
                 {
                     Destroy(gameObject);
                 }
