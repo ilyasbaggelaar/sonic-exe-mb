@@ -89,6 +89,7 @@ public class CrabController_01 : MonoBehaviour
                 }
                 else if (lives == 0)
                 {
+                    player.TakeKnockback(transform.position);
                     Destroy(gameObject);
                 }
             }
