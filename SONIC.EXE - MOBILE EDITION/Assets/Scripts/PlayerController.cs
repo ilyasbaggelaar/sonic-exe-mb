@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private float moveInput;
+
+    private bool isDashing;
     public bool isGrounded { get; private set; }
 
     private Animator animator;
@@ -36,11 +39,30 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource deathSound;
 
+    [Header("speed Dash")]
+
+    private float chargeAmount = 0f;
+
+    public float maxCharge = 10f;
+
+    public float chargeDecayRate = 2f;
+
+    public float chargeBoosMultiplier = 2f;
+
+    private bool isCharging = false;
+
+
+
     [Header("Ring Settings")]
 
+    public TextMeshProUGUI ringText;
+
+    public GameObject ringDropPrefab;
     public int ringCount = 10;
 
    public static int lives = 3;
+
+    public AudioSource ringPickup;
 
     public event Action OnRingsLost;
     public event Action OnPlayerDeath;
@@ -56,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isDead = false;
 
-    private bool invFrame = false;
+    public bool invFrame = false;
 
     //private Vector2 deathVelocity = new Vector2(0, 8f);
 
@@ -78,20 +100,34 @@ public class PlayerController : MonoBehaviour
             Debug.Log($"Loaded: {lives}, rings: {ringCount}");
         }
 
+        UpdateRingUI();
+
         rb.freezeRotation = true;
         backGroundMusic.volume = 0.4f;
         audioData.Stop();
         damageSound.Stop();
         deathSound.Stop();
+        ringPickup.Stop();
 
+    }
+
+    public void CollectRing()
+    {
+        ringCount += 1;
+        ringPickup.Play();
+    }
+
+    public void UpdateRingUI()
+    {
+        ringText.text = ringCount.ToString();
     }
     public IEnumerator HandleDeathAnimation()
     {
         isDead = true;
 
-                    OnPlayerDeath?.Invoke();
-            Debug.Log("you've died");
-            deathSound.Play();
+        OnPlayerDeath?.Invoke();
+        Debug.Log("you've died");
+        deathSound.Play();
         FindFirstObjectByType<PlayerFollower>().isFollowing = false;
 
         rb.linearVelocity = Vector2.zero;
@@ -124,19 +160,40 @@ public class PlayerController : MonoBehaviour
 
         rb.gravityScale = 2f;
         rb.linearVelocity = new Vector2(0, -10f);
-
+        lives--;
+        SaveManager.Save(lives, ringCount);
         yield return new WaitForSeconds(3f);
 
         if (lives > 0)
         {
-            lives--;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log("Lives Left:" + lives);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         }
 
-        else if (lives == 0)
+        else if (lives <= 0)
         {
-            gameOverImage.SetActive(true);
+            gameOverImage.transform.SetAsLastSibling(); // Make sure it's on top in the Canvas hierarchy
+
+            RectTransform rect = gameOverImage.GetComponent<RectTransform>();
+            rect.anchoredPosition = Vector2.zero;
+            StartCoroutine(FadeInGameOver());
+        }
+    }
+
+    IEnumerator FadeInGameOver()
+    {
+        gameOverImage.SetActive(true);
+        CanvasGroup cg = gameOverImage.GetComponent<CanvasGroup>();
+
+        if (cg == null) cg = gameOverImage.AddComponent<CanvasGroup>();
+
+        cg.alpha = 0f;
+
+        while (cg.alpha < 1f)
+        {
+            cg.alpha += Time.deltaTime / 1.5f;
+            yield return null;
         }
     }
 
@@ -157,7 +214,7 @@ public class PlayerController : MonoBehaviour
 
         backGroundMusic.mute = true;
 
-           Debug.Log("Volume faded to 0.");
+        Debug.Log("Volume faded to 0.");
     }
     public void TakeDamage(Vector2 sourcePosition)
 
@@ -187,6 +244,29 @@ public class PlayerController : MonoBehaviour
         yield break;
     }
 
+    private IEnumerator PerformBoost(float direction, float charge)
+    {
+        isDashing = true;
+        invFrame = true;
+        isCharging = false;
+
+        float boost = charge * chargeBoosMultiplier;
+
+        rb.AddForce(new Vector2(direction * boost, 0f), ForceMode2D.Impulse);
+
+      animator.SetBool("isCharging", false);
+        animator.SetBool("isDashing", true);
+        Debug.Log("isDashing is now true");
+        circleCollider.radius = 0.30f;
+        yield return new WaitForSeconds(1.5f);
+        animator.SetBool("isDashing", false);
+        circleCollider.radius = 0.45f;
+        Debug.Log("isdashing is now false");
+
+        isDashing = false;
+
+        invFrame = false;
+    }
     private IEnumerator HandleDamageKnockback(Vector2 sourcePosition)
     {
         isDead = true;
@@ -201,6 +281,7 @@ public class PlayerController : MonoBehaviour
 
         if (ringCount > 0)
         {
+            ringSpawner(ringCount);
             ringCount = 0;
             OnRingsLost?.Invoke();
             Debug.Log("rings lost");
@@ -221,6 +302,40 @@ public class PlayerController : MonoBehaviour
         invFrame = false;
     }
 
+    public void ringSpawner(int amount)
+    {
+
+        //not sure yet if this should go into the PlayerController or if it can be here, will figure it out as i write the code.
+
+        //should spawn rings when hit by enemy. The equal am++ount to how many the player controller has. Might be needed to make that static.
+        //in fixed update, apply physics so it bounces, up and down.
+
+        //make a private ienumator (called something like that) that would run for a duration  and afterwards destroys the gameobject itself.
+
+        for (int i = 0; i < amount && i < 50; i++)
+        {
+            Vector3 spawnOffset = new Vector2(UnityEngine.Random.Range(-0.5f, 0.5f), 0.5f);
+
+            GameObject ring = Instantiate(ringDropPrefab, transform.position + spawnOffset, Quaternion.identity);
+            Rigidbody2D rb = ring.GetComponent<Rigidbody2D>();
+
+
+
+            Vector2 bounceDirection = new Vector2(UnityEngine.Random.Range(-1f, 1f), 1f).normalized;
+
+            rb.AddForce(bounceDirection * 5, ForceMode2D.Impulse);
+            RingDrop ringDrop = ring.GetComponent<RingDrop>();
+
+            if (ringDrop != null)
+            {
+                StartCoroutine(ringDrop.destroyItem());
+            }
+
+        }
+
+
+    }
+
     void OnApplicationQuit()
     {
         SaveManager.Save(lives, ringCount);   
@@ -231,7 +346,29 @@ public class PlayerController : MonoBehaviour
         if (isDead) return;
 
         moveInput = Input.GetAxisRaw("Horizontal");
-        animator.SetBool("isRunning", moveInput != 0 && isGrounded);
+        isCharging = Input.GetAxisRaw("Vertical") < 0;
+
+        
+
+        if (isCharging && Input.GetKeyDown(KeyCode.Z) && isGrounded)
+        {
+            chargeAmount = Mathf.Min(chargeAmount + 1f, maxCharge);
+            animator.SetBool("isCharging", moveInput == 0 && isCharging && Input.GetKeyDown(KeyCode.Z));
+            circleCollider.radius = 0.30f;
+        }
+        else if (!isCharging)
+        {
+            animator.SetBool("isCharging", false);
+            circleCollider.radius = 0.45f;
+        }
+
+        if (!isCharging && chargeAmount > 0f)
+        {
+            chargeAmount = Mathf.Max(chargeAmount - chargeDecayRate * Time.deltaTime, 0f);
+        }
+
+
+
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -240,9 +377,14 @@ public class PlayerController : MonoBehaviour
             audioData.Play();
         }
 
+        if (!isDashing)
+        {
+            animator.SetBool("isRunning", moveInput != 0 && isGrounded);
+            animator.SetBool("isJumping", !isGrounded);
+            animator.SetBool("isDucking", isCharging);
+        }
 
 
-        animator.SetBool("isJumping", !isGrounded);
 
 
         //animation / sprite flip
@@ -253,20 +395,6 @@ public class PlayerController : MonoBehaviour
             scale.x = Mathf.Abs(scale.x) * (moveInput > 0 ? 1 : -1);
             transform.localScale = scale;
         }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            if (Time.timeScale == 1.0f)
-            {
-                Time.timeScale = 0.01f;
-            }
-            else
-            {
-                Time.timeScale = 1.0f;
-            }
-        }
-
-
     }
 
     void FixedUpdate()
@@ -277,6 +405,15 @@ public class PlayerController : MonoBehaviour
 
         // Always allow movement; freeze rotation only
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        if (!isCharging && chargeAmount > 0f && moveInput != 0 && !isDashing)
+        {
+
+
+
+            StartCoroutine(PerformBoost(moveInput, chargeAmount));
+            chargeAmount = 0f;
+        }
 
         // Deceleration logic if no input
         if (isGrounded && moveInput == 0)

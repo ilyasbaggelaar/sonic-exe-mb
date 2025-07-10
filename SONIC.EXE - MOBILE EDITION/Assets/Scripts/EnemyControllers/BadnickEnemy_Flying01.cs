@@ -82,7 +82,7 @@ public class FlyingEnemyController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -101,6 +101,7 @@ public class FlyingEnemyController : MonoBehaviour
                 }
                 else if (lives == 0)
                 {
+                    player.TakeKnockback(transform.position);
                     Destroy(gameObject);
                 }
             }
@@ -123,7 +124,7 @@ public class FlyingEnemyController : MonoBehaviour
             Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
             float angle = Vector2.Angle(GetFacingDirection(), directionToPlayer);
 
-            Debug.Log(angle);
+      
 
             if (Mathf.Abs(angle - 45f) <= 1f && Vector2.Distance(transform.position, player.transform.position) <= detectionRange)
             {

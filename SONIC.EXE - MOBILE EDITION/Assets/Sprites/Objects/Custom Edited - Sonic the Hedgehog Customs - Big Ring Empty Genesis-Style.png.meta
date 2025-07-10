@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: 6d7b78bff21ddd2d0b7124eded2510ce
+guid: 86ae118d118a4bf5f885f03ac4bfe7ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7113912370859846003
-    second: game_over_PNG22_0
+      213: -1074334940003747963
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_0
   - first:
-      213: 2032627015686835569
-    second: game_over_PNG22_1
+      213: -2264788186704726199
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_1
   - first:
-      213: 9024623716778733260
-    second: game_over_PNG22_2
+      213: -6703206056913651149
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_2
   - first:
-      213: 8523026658586821936
-    second: game_over_PNG22_3
+      213: -4121780871897960830
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_3
   - first:
-      213: -7649699559924920289
-    second: game_over_PNG22_4
-  - first:
-      213: 7642965710447262028
-    second: game_over_PNG22_5
-  - first:
-      213: 969822946838341923
-    second: game_over_PNG22_6
-  - first:
-      213: -3604189923292814270
-    second: game_over_PNG22_7
+      213: -6626781877444232355
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,12 +58,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,10 +84,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,43 +121,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: game_over_PNG22_0
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 89
-        width: 21
-        height: 28
+        x: 2
+        y: 4
+        width: 68
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8654abc36e464d90800000000000000
-      internalID: -7113912370859846003
+      spriteID: 587394b60123711f0800000000000000
+      internalID: -1074334940003747963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_1
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 89
-        width: 21
-        height: 28
+        x: 71
+        y: 4
+        width: 60
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d40ee5087553c10800000000000000
-      internalID: 2032627015686835569
+      spriteID: 947b6ffb42bd190e0800000000000000
+      internalID: -2264788186704726199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_2
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 89
-        width: 25
-        height: 28
+        x: 140
+        y: 4
+        width: 52
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cce6926b477ed3d70800000000000000
-      internalID: 9024623716778733260
+      spriteID: 33a3a693b9d69f2a0800000000000000
+      internalID: -6703206056913651149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_3
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_3
       rect:
         serializedVersion: 2
-        x: 126
-        y: 89
-        width: 21
-        height: 28
+        x: 213
+        y: 4
+        width: 36
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 035804cc69fd74670800000000000000
-      internalID: 8523026658586821936
+      spriteID: 28ea588922e7cc6c0800000000000000
+      internalID: -4121780871897960830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_4
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_4
       rect:
         serializedVersion: 2
-        x: 57
-        y: 53
-        width: 21
-        height: 28
+        x: 282
+        y: 4
+        width: 28
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,74 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f109634b7cec6d590800000000000000
-      internalID: -7649699559924920289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: game_over_PNG22_5
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 53
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4933b9c1d4411a60800000000000000
-      internalID: 7642965710447262028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: game_over_PNG22_6
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 53
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3296251f4d0857d00800000000000000
-      internalID: 969822946838341923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: game_over_PNG22_7
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 53
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 244e61f4c585bfdc0800000000000000
-      internalID: -3604189923292814270
+      spriteID: d5bb0fe1ef0f804a0800000000000000
+      internalID: -6626781877444232355
       vertices: []
       indices: 
       edges: []
@@ -339,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      game_over_PNG22_0: -7113912370859846003
-      game_over_PNG22_1: 2032627015686835569
-      game_over_PNG22_2: 9024623716778733260
-      game_over_PNG22_3: 8523026658586821936
-      game_over_PNG22_4: -7649699559924920289
-      game_over_PNG22_5: 7642965710447262028
-      game_over_PNG22_6: 969822946838341923
-      game_over_PNG22_7: -3604189923292814270
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_0: -1074334940003747963
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_1: -2264788186704726199
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_2: -6703206056913651149
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_3: -4121780871897960830
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Empty Genesis-Style_4: -6626781877444232355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

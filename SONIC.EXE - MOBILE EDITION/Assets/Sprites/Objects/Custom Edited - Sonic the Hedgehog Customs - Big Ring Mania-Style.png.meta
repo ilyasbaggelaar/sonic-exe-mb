@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 6d7b78bff21ddd2d0b7124eded2510ce
+guid: 90c7d52ebce6065ec91c2ca0d540b538
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7113912370859846003
-    second: game_over_PNG22_0
+      213: -8981152861397797066
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_0
   - first:
-      213: 2032627015686835569
-    second: game_over_PNG22_1
+      213: -1871804965244933934
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_1
   - first:
-      213: 9024623716778733260
-    second: game_over_PNG22_2
+      213: 8735922361452194391
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_2
   - first:
-      213: 8523026658586821936
-    second: game_over_PNG22_3
+      213: 2964445576532586126
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_3
   - first:
-      213: -7649699559924920289
-    second: game_over_PNG22_4
+      213: 311114932801005230
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_4
   - first:
-      213: 7642965710447262028
-    second: game_over_PNG22_5
+      213: -4331985564462624097
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_5
   - first:
-      213: 969822946838341923
-    second: game_over_PNG22_6
+      213: 2786885227878708216
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_6
   - first:
-      213: -3604189923292814270
-    second: game_over_PNG22_7
+      213: 5025188824121266044
+    second: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,12 +67,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,10 +93,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,43 +130,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: game_over_PNG22_0
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 89
-        width: 21
-        height: 28
+        x: 0
+        y: 462
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8654abc36e464d90800000000000000
-      internalID: -7113912370859846003
+      spriteID: 637b6e68e098c5380800000000000000
+      internalID: -8981152861397797066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_1
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 89
-        width: 21
-        height: 28
+        x: 4
+        y: 396
+        width: 58
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d40ee5087553c10800000000000000
-      internalID: 2032627015686835569
+      spriteID: 2d863c52d430606e0800000000000000
+      internalID: -1871804965244933934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_2
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 89
-        width: 25
-        height: 28
+        x: 8
+        y: 330
+        width: 50
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cce6926b477ed3d70800000000000000
-      internalID: 9024623716778733260
+      spriteID: 75aefb35a1b3c3970800000000000000
+      internalID: 8735922361452194391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_3
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_3
       rect:
         serializedVersion: 2
-        x: 126
-        y: 89
-        width: 21
-        height: 28
+        x: 16
+        y: 264
+        width: 34
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 035804cc69fd74670800000000000000
-      internalID: 8523026658586821936
+      spriteID: e8ee339ab83d32920800000000000000
+      internalID: 2964445576532586126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_4
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_4
       rect:
         serializedVersion: 2
-        x: 57
-        y: 53
-        width: 21
-        height: 28
+        x: 16
+        y: 132
+        width: 34
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f109634b7cec6d590800000000000000
-      internalID: -7649699559924920289
+      spriteID: ea66ced026d415400800000000000000
+      internalID: 311114932801005230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_5
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_5
       rect:
         serializedVersion: 2
-        x: 79
-        y: 53
-        width: 21
-        height: 28
+        x: 20
+        y: 198
+        width: 26
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4933b9c1d4411a60800000000000000
-      internalID: 7642965710447262028
+      spriteID: f92d51ab412b1e3c0800000000000000
+      internalID: -4331985564462624097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_6
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_6
       rect:
         serializedVersion: 2
-        x: 100
-        y: 53
-        width: 21
-        height: 28
+        x: 4
+        y: 0
+        width: 58
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3296251f4d0857d00800000000000000
-      internalID: 969822946838341923
+      spriteID: 8f37e7569510da620800000000000000
+      internalID: 2786885227878708216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: game_over_PNG22_7
+      name: Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_7
       rect:
         serializedVersion: 2
-        x: 122
-        y: 53
-        width: 21
-        height: 28
+        x: 8
+        y: 66
+        width: 50
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,8 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 244e61f4c585bfdc0800000000000000
-      internalID: -3604189923292814270
+      spriteID: c7fc2076c9e0db540800000000000000
+      internalID: 5025188824121266044
       vertices: []
       indices: 
       edges: []
@@ -339,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      game_over_PNG22_0: -7113912370859846003
-      game_over_PNG22_1: 2032627015686835569
-      game_over_PNG22_2: 9024623716778733260
-      game_over_PNG22_3: 8523026658586821936
-      game_over_PNG22_4: -7649699559924920289
-      game_over_PNG22_5: 7642965710447262028
-      game_over_PNG22_6: 969822946838341923
-      game_over_PNG22_7: -3604189923292814270
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_0: -8981152861397797066
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_1: -1871804965244933934
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_2: 8735922361452194391
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_3: 2964445576532586126
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_4: 311114932801005230
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_5: -4331985564462624097
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_6: 2786885227878708216
+      Custom Edited - Sonic the Hedgehog Customs - Big Ring Mania-Style_7: 5025188824121266044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

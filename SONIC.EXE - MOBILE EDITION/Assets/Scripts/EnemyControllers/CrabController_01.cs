@@ -59,6 +59,8 @@ public class CrabController_01 : MonoBehaviour
         {
             transform.position += new Vector3(direction * movementSpeed * Time.deltaTime, 0f, 0f);
         }
+
+        
     }
 
     private void SetAnimationState(bool isIdle = false, bool isMovingLeft = false, bool isMovingRight = false)
@@ -70,7 +72,7 @@ public class CrabController_01 : MonoBehaviour
 
     
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -78,17 +80,26 @@ public class CrabController_01 : MonoBehaviour
 
             if (player != null)
             {
+                if (player.invFrame)
+                {
+                    Debug.Log("player is invincible- destroying crab!");
+                    Destroy(gameObject);
+                }
                 if (player.isGrounded)
                 {
+                    Debug.Log("player takes damage");
                     player.TakeDamage(transform.position);
+                    player.UpdateRingUI();
                 }
                 else if (lives >= 1)
                 {
+                    Debug.Log("player takeknocback");
                     lives--;
                     player.TakeKnockback(transform.position);
                 }
                 else if (lives == 0)
                 {
+                    Debug.Log("player takeknocback and destroys crab");
                     player.TakeKnockback(transform.position);
                     Destroy(gameObject);
                 }
