@@ -182,12 +182,15 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        else if (lives <= 0)
+        else if (lives <= 0 && !PlayerPrefs.HasKey("NextLifeTime"))
         {
             gameOverImage.transform.SetAsLastSibling(); // Make sure it's on top in the Canvas hierarchy
 
             RectTransform rect = gameOverImage.GetComponent<RectTransform>();
             rect.anchoredPosition = Vector2.zero;
+            string nextLifeTime = System.DateTime.UtcNow.AddMinutes(30).ToString();
+            PlayerPrefs.SetString("NextLifeTime", nextLifeTime);
+            PlayerPrefs.Save();
             StartCoroutine(FadeInGameOver());
         }
     }
