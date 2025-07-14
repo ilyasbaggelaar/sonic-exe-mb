@@ -1,0 +1,51 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
+
+public class MainMenuController : MonoBehaviour
+{
+    public Button continueButton;
+
+    public Button newGameButton;
+
+    public Button settings;
+
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+        //Listeners to buttons
+        continueButton.onClick.AddListener(ContinueGame);
+        newGameButton.onClick.AddListener(NewGame);
+        settings.onClick.AddListener(Settings);
+
+        continueButton.interactable = PlayerPrefs.HasKey("SavedGame");
+        
+    }
+
+    void ContinueGame()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    void NewGame()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("SampleScene");
+
+    }
+
+    void Settings()
+    {
+        //WIP
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

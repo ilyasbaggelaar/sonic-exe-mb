@@ -60,9 +60,12 @@ public class PlayerController : MonoBehaviour
     public GameObject ringDropPrefab;
     public int ringCount = 10;
 
+    public int specialRing = 0;
+
    public static int lives = 3;
 
     public AudioSource ringPickup;
+    public AudioSource specialRingPickup;
 
     public event Action OnRingsLost;
     public event Action OnPlayerDeath;
@@ -108,6 +111,7 @@ public class PlayerController : MonoBehaviour
         damageSound.Stop();
         deathSound.Stop();
         ringPickup.Stop();
+        specialRingPickup.Stop();
 
     }
 
@@ -115,6 +119,13 @@ public class PlayerController : MonoBehaviour
     {
         ringCount += 1;
         ringPickup.Play();
+    }
+
+    public void specialRings()
+    {
+        specialRing += 1;
+        Debug.Log(specialRing);
+        specialRingPickup.Play();
     }
 
     public void UpdateRingUI()
@@ -225,8 +236,7 @@ public class PlayerController : MonoBehaviour
          StartCoroutine(HandleDamageKnockback(sourcePosition));
     }
 
-
-//this could be mundane. same with the above. polish up when everything works fine.
+    //this could be mundane. same with the above. polish up when everything works fine.
     public void TakeKnockback(Vector2 sourcePosition)
     {
         StartCoroutine(HandleKnockback(sourcePosition));
