@@ -8,6 +8,8 @@ public static class SaveManager
 
     private const string SceneKey = "scene";
 
+    private const string LevelUnlockKey = "levelUnlock";
+
     public static void Save(int lives, int rings)
     {
         PlayerPrefs.SetInt(LivesKey, lives);
@@ -36,5 +38,21 @@ public static class SaveManager
         //add a confirmation button lol.
         PlayerPrefs.DeleteAll();
         Debug.Log("Save Data Cleared");
-}
+    }
+
+    public static void UnlockNextLevel(int completedLevelIndex)
+    {
+        int currentUnlocked = PlayerPrefs.GetInt(LevelUnlockKey, 1);
+        if (completedLevelIndex + 1 > currentUnlocked)
+        {
+            PlayerPrefs.SetInt(LevelUnlockKey, completedLevelIndex + 1);
+            PlayerPrefs.Save();
+            Debug.Log("Unlocked Level " + (completedLevelIndex + 1));
+        }
+    }
+
+    public static int getUnlockedLevel()
+    {
+        return PlayerPrefs.GetInt(LevelUnlockKey, 1);
+    }
 }

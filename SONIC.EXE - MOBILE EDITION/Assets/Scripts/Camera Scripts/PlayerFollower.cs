@@ -8,7 +8,7 @@ public class PlayerFollower : MonoBehaviour
 
     void Update()
     {
-        if (isFollowing)
+        if (isFollowing == true)
         {
                     transform.position = player.transform.position + new Vector3(0, 0, -10);
         }

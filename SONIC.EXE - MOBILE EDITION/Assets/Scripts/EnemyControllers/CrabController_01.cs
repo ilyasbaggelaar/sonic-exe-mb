@@ -9,10 +9,13 @@ public class CrabController_01 : MonoBehaviour
 
     public float idleDuration = 2f;
 
+     public AudioSource defeatedEnemyBadnikSound;
+
     private Rigidbody2D rb;
 
     private Animator animator;
 
+    private Collider2D colliders;
     private int direction = -1;
 
     public int lives = 1;
@@ -23,7 +26,9 @@ public class CrabController_01 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        colliders = GetComponent<Collider2D>();
 
+        defeatedEnemyBadnikSound.Stop();
         StartCoroutine(PatrolRoutine());
     }
 
@@ -33,7 +38,7 @@ public class CrabController_01 : MonoBehaviour
         {
             SetAnimationState(isIdle: true);
 
-                        isMoving = false;
+            isMoving = false;
 
             yield return new WaitForSeconds(idleDuration);
 
@@ -43,7 +48,7 @@ public class CrabController_01 : MonoBehaviour
     isMovingRight: direction == 1
 );
 
-               isMoving = true;
+            isMoving = true;
 
 
             yield return new WaitForSeconds(moveDuration);
@@ -60,7 +65,7 @@ public class CrabController_01 : MonoBehaviour
             transform.position += new Vector3(direction * movementSpeed * Time.deltaTime, 0f, 0f);
         }
 
-        
+
     }
 
     private void SetAnimationState(bool isIdle = false, bool isMovingLeft = false, bool isMovingRight = false)
@@ -70,7 +75,7 @@ public class CrabController_01 : MonoBehaviour
         animator.SetBool("isMovingRight", isMovingRight);
     }
 
-    
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -101,9 +106,25 @@ public class CrabController_01 : MonoBehaviour
                 {
                     Debug.Log("player takeknocback and destroys crab");
                     player.TakeKnockback(transform.position);
-                    Destroy(gameObject);
+                    StopCoroutine(PatrolRoutine());
+                    isMoving = false;
+
+                    colliders.enabled = false;
+                    StartCoroutine(EnemyDefeated());
+
                 }
             }
         }
+    }
+
+
+    private IEnumerator EnemyDefeated()
+    {
+        animator.SetBool("isDefeated", true);
+
+        defeatedEnemyBadnikSound.Play();
+
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
     }
 }

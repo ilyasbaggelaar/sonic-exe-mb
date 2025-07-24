@@ -1,9 +1,16 @@
 using UnityEngine;
 
+[System.Serializable]
+public struct LoopPoint
+{
+    public Transform point;
+    public float zRotation;
+}
+
 public class LoopZone : MonoBehaviour
 {
-    public Transform[] loopPathRight; // path if entering from left
-    public Transform[] loopPathLeft;  // path if entering from right
+    public LoopPoint[] loopPathRight; // path if entering from left
+    public LoopPoint[] loopPathLeft;  // path if entering from right
     public float requiredSpeed = 8f;
 
     private void OnTriggerEnter2D(Collider2D other)

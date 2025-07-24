@@ -13,11 +13,25 @@ public class MainMenuController : MonoBehaviour
 
     public Button settings;
 
+    public Button[] levelButtons;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        int unlockedLevel = SaveManager.getUnlockedLevel();
+
+        for (int i = 0; i < levelButtons.Length; i++)
+        {
+            int levelIndex = i + 1;
+
+            levelButtons[i].interactable = levelIndex < unlockedLevel;
+
+            int indexCopy = levelIndex;
+            levelButtons[i].onClick.AddListener(() => LoadLevel(indexCopy));
+        }
 
         SaveManager.Load(out int lives, out int rings, out string scene);
 
@@ -60,6 +74,11 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    void LoadLevel(int levelIndex)
+    {
+        string sceneName = "Level" + levelIndex;
+        SceneManager.LoadScene(sceneName);
+    }
     void NewGame()
     {
         PlayerPrefs.DeleteAll();

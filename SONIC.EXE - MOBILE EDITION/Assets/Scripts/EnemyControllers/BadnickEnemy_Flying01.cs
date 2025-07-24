@@ -8,6 +8,8 @@ public class FlyingEnemyController : MonoBehaviour
     public float idleDuration = 2f;
     public int lives = 1;
 
+    public AudioSource flyingBadnikDefeatedSound;
+
     [Header("Attack Functionality")]
 
     public float detectionRange = 5f;
@@ -23,6 +25,7 @@ public class FlyingEnemyController : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private Collider2D theColliderOfThisStupidFlyingEnemeny;
 
     private int direction = -1; // -1 = left, 1 = right
     private bool isMoving = false;
@@ -34,6 +37,8 @@ public class FlyingEnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        theColliderOfThisStupidFlyingEnemeny = GetComponent<Collider2D>();
+        flyingBadnikDefeatedSound.Stop();
         StartCoroutine(PatrolRoutine());
     }
 
@@ -102,7 +107,9 @@ public class FlyingEnemyController : MonoBehaviour
                 else if (lives == 0)
                 {
                     player.TakeKnockback(transform.position);
-                    Destroy(gameObject);
+                    isMoving = false;
+                    theColliderOfThisStupidFlyingEnemeny.enabled = false;
+                    StartCoroutine(EnemyDefeated());
                 }
             }
         }
@@ -124,7 +131,7 @@ public class FlyingEnemyController : MonoBehaviour
             Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
             float angle = Vector2.Angle(GetFacingDirection(), directionToPlayer);
 
-      
+
 
             if (Mathf.Abs(angle - 45f) <= 1f && Vector2.Distance(transform.position, player.transform.position) <= detectionRange)
             {
@@ -155,10 +162,20 @@ public class FlyingEnemyController : MonoBehaviour
             beamScript.Initialize(directionToPlayer);
 
             float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
-        beam.transform.rotation = Quaternion.Euler(0, 0, angle);
+            beam.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
 
         isAttacking = false;
-}
+    }
+
+
+    IEnumerator EnemyDefeated()
+    {
+        flyingBadnikDefeatedSound.Play();
+        animator.SetBool("isDefeated", true);
+
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+    }
 
 }

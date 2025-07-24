@@ -19,36 +19,46 @@ public class LoopMotionController : MonoBehaviour
         }
     }
 
-    public void StartLoop(Transform[] path)
+    public void StartLoop(LoopPoint[] path)
     {
         animator?.SetBool("isCharging", true);
         animator?.SetBool("isDashing", true);
         
         StartCoroutine(FollowPath(path));
     }
+private IEnumerator FollowPath(LoopPoint[] path)
+{
+    rb.linearVelocity = Vector2.zero;
+    rb.gravityScale = 0;
+    rb.bodyType = RigidbodyType2D.Kinematic;
+    controller.enabled = false;
 
-    private IEnumerator FollowPath(Transform[] path)
+    float moveSpeed = 10f;
+
+    for (int i = 0; i < path.Length; i++)
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.gravityScale = 0;
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        controller.enabled = false;
-
-        float moveSpeed = 10f;
-
-        for (int i = 0; i < path.Length; i++)
+        while (Vector2.Distance(transform.position, path[i].point.position) > 0.05f)
         {
-            while (Vector2.Distance(transform.position, path[i].position) > 0.05f)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, path[i].position, moveSpeed * Time.deltaTime);
-                yield return null;
-            }
-        }
+            // 🔁 Use manually set zRotation for each point
+            transform.rotation = Quaternion.Euler(0, 0, path[i].zRotation);
 
-        rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 2f;
-        controller.enabled = true;
-            animator?.SetBool("isCharging", false);
-        animator?.SetBool("isDashing", false);
+            transform.position = Vector2.MoveTowards(
+                transform.position,
+                path[i].point.position,
+                moveSpeed * Time.deltaTime
+            );
+
+            yield return null;
+        }
     }
+
+    transform.rotation = Quaternion.identity;
+    rb.bodyType = RigidbodyType2D.Dynamic;
+    rb.gravityScale = 2f;
+    controller.enabled = true;
+    animator?.SetBool("isCharging", false);
+    animator?.SetBool("isDashing", false);
+}
+
+
 }

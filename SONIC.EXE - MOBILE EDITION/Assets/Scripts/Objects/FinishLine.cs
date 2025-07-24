@@ -7,12 +7,24 @@ public class FinishLine : MonoBehaviour
     private Animator animator;
     private PlayerController player;
     private Rigidbody2D rb;
+    public AudioSource endSound;
 
-    private Camera cam;
+    public int levelIndex = 1;
+
+    private PlayerFollower playerFollower;
     void Start()
     {
         animator = GetComponent<Animator>();
 
+
+        Camera mainCamera = Camera.main;
+
+        if (mainCamera != null)
+        {
+            playerFollower = mainCamera.GetComponent<PlayerFollower>();
+        }
+
+        endSound.Stop();
     }
 
     // Update is called once per frame
@@ -26,8 +38,32 @@ public class FinishLine : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject.GetComponent<PlayerController>();
+            
+
+            if (playerFollower != null)
+            {
+                playerFollower.isFollowing = false;
+            }
 
             animator.SetBool("isFinished", true);
+
+            if (player != null)
+            {
+                player.enabled = false;
+                Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
+
+                playerRb.linearVelocity = new Vector2(5f, playerRb.linearVelocityY);
+
+                Animator playerAnimator = player.GetComponent<Animator>();
+
+                playerAnimator.SetBool("isRunning", true);
+                            StartCoroutine(player.VolumefadeOut());
+            }
+            
+
+            endSound.Play();
+
+
 
             StartCoroutine(SwitchScene());
         }
@@ -36,6 +72,8 @@ public class FinishLine : MonoBehaviour
 
     IEnumerator SwitchScene()
     {
+
+        SaveManager.UnlockNextLevel(levelIndex);
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("MainMenu");
     }

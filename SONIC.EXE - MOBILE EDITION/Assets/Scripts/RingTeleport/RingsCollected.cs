@@ -1,9 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RingsCollected : MonoBehaviour
 {
     public PlayerController player;
+
+    public PlayerFollower cameraFollow;
+
+    public string sceneToLoad;
 
     private Animator animator;
 
@@ -36,7 +41,12 @@ public class RingsCollected : MonoBehaviour
                 {
                     animator.SetBool("ringsCollected", true);
 
-                    if (animator.GetBool("haveTeleported") == true) {
+                    if (animator.GetBool("haveTeleported") == true)
+                    {
+
+                        yield return new WaitForSeconds(2f);
+
+                        SceneManager.LoadScene(sceneToLoad);
                         
                     }
                 }
@@ -48,9 +58,18 @@ public class RingsCollected : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (specialRingsCount == 4)
+        // PlayerController player = collision.GetComponent<PlayerController>();
+
+
+        if (specialRingsCount == 4 && collision.CompareTag("Player"))
         {
+
             animator.SetBool("haveTeleported", true);
+
+            cameraFollow.isFollowing = false;
+
+            player.gameObject.SetActive(false);
+
         }
     }
 

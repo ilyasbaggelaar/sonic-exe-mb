@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource deathSound;
 
+   
+
     [Header("speed Dash")]
 
     private float chargeAmount = 0f;
@@ -211,7 +213,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private IEnumerator VolumefadeOut()
+    public IEnumerator VolumefadeOut()
     {
         float startVolume = backGroundMusic.volume;
         float duration = 1f;

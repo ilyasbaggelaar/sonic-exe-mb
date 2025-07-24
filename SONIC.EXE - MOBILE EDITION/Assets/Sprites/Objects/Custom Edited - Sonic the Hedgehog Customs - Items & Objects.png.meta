@@ -450,9 +450,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 4398
-        width: 64
+        x: 156
+        y: 4370
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -472,9 +472,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_15
       rect:
         serializedVersion: 2
-        x: 192
-        y: 4398
-        width: 64
+        x: 190
+        y: 4370
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -494,9 +494,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 4398
-        width: 64
+        x: 240
+        y: 4370
+        width: 56
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -516,8 +516,8 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_17
       rect:
         serializedVersion: 2
-        x: 320
-        y: 4398
+        x: 298
+        y: 4370
         width: 64
         height: 64
       alignment: 0
@@ -538,9 +538,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_18
       rect:
         serializedVersion: 2
-        x: 384
-        y: 4398
-        width: 64
+        x: 364
+        y: 4370
+        width: 56
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -560,9 +560,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_19
       rect:
         serializedVersion: 2
-        x: 448
-        y: 4398
-        width: 64
+        x: 422
+        y: 4370
+        width: 48
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -582,9 +582,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_20
       rect:
         serializedVersion: 2
-        x: 512
-        y: 4398
-        width: 64
+        x: 472
+        y: 4370
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -714,9 +714,9 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_26
       rect:
         serializedVersion: 2
-        x: 128
-        y: 4334
-        width: 64
+        x: 125
+        y: 4335
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -728,28 +728,6 @@ TextureImporter:
       bones: []
       spriteID: 1d911d1f41c664a5fa8a6b1ab7cd5333
       internalID: -1882257943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_27
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 4334
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d54535a4fc7bc1323949ff733d044baa
-      internalID: -248250534
       vertices: []
       indices: 
       edges: []
@@ -846,8 +824,8 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_32
       rect:
         serializedVersion: 2
-        x: 512
-        y: 4334
+        x: 506
+        y: 4370
         width: 64
         height: 64
       alignment: 0
@@ -5686,10 +5664,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Items & Objects_252
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3118
-        width: 64
-        height: 64
+        x: 16
+        y: 3131
+        width: 30
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
