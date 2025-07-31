@@ -12436,10 +12436,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_560
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 2282
+        x: 1030
+        y: 2285
         width: 32
-        height: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -12458,10 +12458,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_561
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2282
+        x: 1064
+        y: 2285
         width: 32
-        height: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -21984,7 +21984,7 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_994
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 2058
         width: 32
         height: 32
@@ -22006,7 +22006,7 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_995
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 2058
         width: 32
         height: 32
@@ -23392,8 +23392,8 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_1058
       rect:
         serializedVersion: 2
-        x: 64
-        y: 2026
+        x: 71
+        y: 2017
         width: 32
         height: 32
       alignment: 0
@@ -83892,10 +83892,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_3808
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 714
+        x: 1478
+        y: 704
         width: 32
-        height: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -83914,10 +83914,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_3809
       rect:
         serializedVersion: 2
-        x: 1504
-        y: 714
+        x: 1512
+        y: 704
         width: 32
-        height: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -83936,10 +83936,10 @@ TextureImporter:
       name: Custom Edited - Sonic the Hedgehog Customs - Sonic_3810
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 714
+        x: 1546
+        y: 704
         width: 32
-        height: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

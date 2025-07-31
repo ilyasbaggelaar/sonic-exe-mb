@@ -17,7 +17,7 @@ namespace _Scripts
             //Getting the starting X position of sprite.
             _startingPos = transform.position.x;
             //Getting the length of the sprites + adding padding so it can loop.
-            _lengthOfSprite = GetComponent<SpriteRenderer>().bounds.size.x + 24f;
+            _lengthOfSprite = GetComponent<SpriteRenderer>().bounds.size.x + 26.6f;
         }
 
 

@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource deathSound;
 
-   
+
 
     [Header("speed Dash")]
 
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
     public int specialRing = 0;
 
-   public static int lives = 3;
+    public static int lives = 3;
 
     public AudioSource ringPickup;
     public AudioSource specialRingPickup;
@@ -84,6 +84,10 @@ public class PlayerController : MonoBehaviour
     private bool isDead = false;
 
     public bool invFrame = false;
+
+
+    //Use for disabling character movement. 
+    private bool canMove = false;
 
     //private Vector2 deathVelocity = new Vector2(0, 8f);
 
@@ -107,6 +111,8 @@ public class PlayerController : MonoBehaviour
 
         UpdateRingUI();
 
+        StartCoroutine(PlayTitleCard());
+
         rb.freezeRotation = true;
         backGroundMusic.volume = 0.4f;
         audioData.Stop();
@@ -128,6 +134,14 @@ public class PlayerController : MonoBehaviour
         specialRing += 1;
         Debug.Log(specialRing);
         specialRingPickup.Play();
+    }
+
+    IEnumerator PlayTitleCard()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(2f);
+
+        canMove = true;
     }
 
     public void UpdateRingUI()
@@ -184,15 +198,20 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        else if (lives <= 0 && !PlayerPrefs.HasKey("NextLifeTime"))
+        else if (lives <= 0)
         {
             gameOverImage.transform.SetAsLastSibling(); // Make sure it's on top in the Canvas hierarchy
 
-            RectTransform rect = gameOverImage.GetComponent<RectTransform>();
+                            RectTransform rect = gameOverImage.GetComponent<RectTransform>();
             rect.anchoredPosition = Vector2.zero;
+            if (!PlayerPrefs.HasKey("NextLifeTime"))
+            {
+
             string nextLifeTime = System.DateTime.UtcNow.AddMinutes(30).ToString();
             PlayerPrefs.SetString("NextLifeTime", nextLifeTime);
             PlayerPrefs.Save();
+            }
+
             StartCoroutine(FadeInGameOver());
         }
     }
@@ -211,6 +230,9 @@ public class PlayerController : MonoBehaviour
             cg.alpha += Time.deltaTime / 1.5f;
             yield return null;
         }
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public IEnumerator VolumefadeOut()
@@ -238,7 +260,7 @@ public class PlayerController : MonoBehaviour
         if (invFrame) return;
         if (isDead) return;
 
-         StartCoroutine(HandleDamageKnockback(sourcePosition));
+        StartCoroutine(HandleDamageKnockback(sourcePosition));
     }
 
     //this could be mundane. same with the above. polish up when everything works fine.
@@ -269,7 +291,7 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(new Vector2(direction * boost, 0f), ForceMode2D.Impulse);
 
-      animator.SetBool("isCharging", false);
+        animator.SetBool("isCharging", false);
         animator.SetBool("isDashing", true);
         Debug.Log("isDashing is now true");
         circleCollider.radius = 0.30f;
@@ -353,17 +375,17 @@ public class PlayerController : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        SaveManager.Save(lives, ringCount);   
+        SaveManager.Save(lives, ringCount);
     }
     void Update()
     {
 
-        if (isDead) return;
+        if (isDead || !canMove) return;
 
         moveInput = Input.GetAxisRaw("Horizontal");
         isCharging = Input.GetAxisRaw("Vertical") < 0;
 
-        
+
 
         if (isCharging && Input.GetKeyDown(KeyCode.Z) && isGrounded)
         {

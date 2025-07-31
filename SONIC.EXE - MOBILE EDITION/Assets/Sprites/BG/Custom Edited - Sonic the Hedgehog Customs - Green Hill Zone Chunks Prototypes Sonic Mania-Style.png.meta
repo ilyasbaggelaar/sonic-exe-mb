@@ -325,10 +325,10 @@ TextureImporter:
         Sonic Mania-Style_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 419
-        width: 180
-        height: 180
+        x: 146
+        y: 344
+        width: 111
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

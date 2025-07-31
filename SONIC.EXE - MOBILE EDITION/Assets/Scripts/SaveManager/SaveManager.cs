@@ -10,6 +10,8 @@ public static class SaveManager
 
     private const string LevelUnlockKey = "levelUnlock";
 
+    private const string RunningRingsKey = "runningRings";
+
     public static void Save(int lives, int rings)
     {
         PlayerPrefs.SetInt(LivesKey, lives);
@@ -21,11 +23,26 @@ public static class SaveManager
 
     }
 
+    public static void SaveRunningMode(int lives, int ringCountRunning)
+    {
+        PlayerPrefs.SetInt(LivesKey, lives);
+        PlayerPrefs.SetInt(RunningRingsKey, ringCountRunning);
+        PlayerPrefs.Save();
+        Debug.Log("Saved running data");
+    }
+    
+
     public static void Load(out int lives, out int rings, out string scene)
     {
         lives = PlayerPrefs.GetInt(LivesKey, 3);
         rings = PlayerPrefs.GetInt(RingsKey, 0);
         scene = PlayerPrefs.GetString(SceneKey, SceneManager.GetActiveScene().name);
+    }
+
+    public static void LoadRunningMode(out int lives, out int ringCountRunning)
+    {
+        lives = PlayerPrefs.GetInt(LivesKey, 3);
+        ringCountRunning = PlayerPrefs.GetInt(RunningRingsKey);
     }
     public static bool HasSaveData()
     {

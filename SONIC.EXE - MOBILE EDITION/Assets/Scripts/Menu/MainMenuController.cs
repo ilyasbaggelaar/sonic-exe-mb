@@ -63,7 +63,7 @@ public class MainMenuController : MonoBehaviour
         //Listeners to buttons
         continueButton.onClick.AddListener(ContinueGame);
         newGameButton.onClick.AddListener(NewGame);
-        settings.onClick.AddListener(Settings);
+       // settings.onClick.AddListener(Settings);
 
         continueButton.interactable = PlayerPrefs.HasKey("SavedGame");
         
@@ -82,7 +82,7 @@ public class MainMenuController : MonoBehaviour
     void NewGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
 
     }
 
