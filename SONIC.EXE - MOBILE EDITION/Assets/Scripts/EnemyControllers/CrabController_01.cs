@@ -82,9 +82,11 @@ public class CrabController_01 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            KnucklesPlayerController knucklesPlayer = collision.gameObject.GetComponent<KnucklesPlayerController>();
 
             if (player != null)
             {
+                Debug.Log("Sonic playerCollision detected.");
                 if (player.invFrame)
                 {
                     Debug.Log("player is invincible- destroying crab!");
@@ -114,6 +116,41 @@ public class CrabController_01 : MonoBehaviour
 
                 }
             }
+
+
+  else if (knucklesPlayer != null)
+            {
+                Debug.Log("Knuckles playerCollision detected.");
+                if (knucklesPlayer.invFrame)
+                {
+                    Debug.Log("player is invincible- destroying crab!");
+                    Destroy(gameObject);
+                }
+                if (knucklesPlayer.isGrounded)
+                {
+                    Debug.Log("player takes damage");
+                    knucklesPlayer.TakeDamage(transform.position);
+                    knucklesPlayer.UpdateRingUI();
+                }
+                else if (lives >= 1)
+                {
+                    Debug.Log("player takeknocback");
+                    lives--;
+                    knucklesPlayer.TakeKnockback(transform.position);
+                }
+                else if (lives == 0)
+                {
+                    Debug.Log("player takeknocback and destroys crab");
+                    knucklesPlayer.TakeKnockback(transform.position);
+                    StopCoroutine(PatrolRoutine());
+                    isMoving = false;
+
+                    colliders.enabled = false;
+                    StartCoroutine(EnemyDefeated());
+
+                }
+            }
+
         }
     }
 

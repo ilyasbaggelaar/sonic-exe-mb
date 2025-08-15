@@ -3,7 +3,7 @@ using UnityEngine;
 public class SideScrollerLevel : MonoBehaviour
 {
 
-    private float speed = 16f;
+    public float speed = 16f;
    public  bool pushLevel = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

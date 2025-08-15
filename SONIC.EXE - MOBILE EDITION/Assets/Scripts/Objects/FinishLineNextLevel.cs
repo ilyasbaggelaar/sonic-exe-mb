@@ -1,12 +1,17 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPEffects.Components;
 public class FinishLineNextLevel : MonoBehaviour
 {
     private Animator animator;
     private PlayerController player;
     private Rigidbody2D rb;
+
+    public TMPWriter tmpWriter;
     public AudioSource endSound;
+
+    //public AudioSource levelUnlockedSound;
 
     public int levelIndex = 1;
 
@@ -64,7 +69,7 @@ public class FinishLineNextLevel : MonoBehaviour
 
             endSound.Play();
 
-
+            tmpWriter.StartWriter();
 
             StartCoroutine(SwitchScene());
         }

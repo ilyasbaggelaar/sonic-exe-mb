@@ -1126,6 +1126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &29709516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1473,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &45545361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1579,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &46706466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,6 +3504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &112695724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,6 +5123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &166713948
 GameObject:
   m_ObjectHideFlags: 0
@@ -5297,6 +5317,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &183802050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5399,6 +5423,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &185449109
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,6 +6628,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &303538199
 GameObject:
   m_ObjectHideFlags: 0
@@ -7757,6 +7789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &364236027
 GameObject:
   m_ObjectHideFlags: 0
@@ -8058,7 +8094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &388688604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8240,6 +8276,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &395088066
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,6 +8680,135 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!1 &405798946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405798948}
+  - component: {fileID: 405798947}
+  m_Layer: 0
+  m_Name: ChargeSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &405798947
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405798946}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b1669137bef433d0897d7673e755b5cb, type: 3}
+  m_Resource: {fileID: 8300000, guid: b1669137bef433d0897d7673e755b5cb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &405798948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405798946}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.82062, y: -5.00701, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412839239
 GameObject:
   m_ObjectHideFlags: 0
@@ -9405,6 +9574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &460103491
 GameObject:
   m_ObjectHideFlags: 0
@@ -9633,6 +9806,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &469643629
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,6 +10157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1001 &483952264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10221,6 +10402,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &509555872
 GameObject:
   m_ObjectHideFlags: 0
@@ -10323,6 +10508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &515482404
 GameObject:
   m_ObjectHideFlags: 0
@@ -11019,6 +11208,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &529603019
 GameObject:
   m_ObjectHideFlags: 0
@@ -12273,6 +12466,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &597659094
 GameObject:
   m_ObjectHideFlags: 0
@@ -14033,6 +14230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &689221805
 GameObject:
   m_ObjectHideFlags: 0
@@ -14327,6 +14528,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &713404498
 GameObject:
   m_ObjectHideFlags: 0
@@ -14429,6 +14634,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &719302958
 GameObject:
   m_ObjectHideFlags: 0
@@ -14894,6 +15103,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &767964769
 GameObject:
   m_ObjectHideFlags: 0
@@ -15753,6 +15966,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &806710617
 GameObject:
   m_ObjectHideFlags: 0
@@ -16468,6 +16685,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &855345876
 GameObject:
   m_ObjectHideFlags: 0
@@ -16910,6 +17131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &884520287
 GameObject:
   m_ObjectHideFlags: 0
@@ -17412,6 +17637,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &904082850
 GameObject:
   m_ObjectHideFlags: 0
@@ -17781,6 +18010,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &951793733
 GameObject:
   m_ObjectHideFlags: 0
@@ -17971,6 +18204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &967797356
 GameObject:
   m_ObjectHideFlags: 0
@@ -18651,6 +18888,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1015519908
 GameObject:
   m_ObjectHideFlags: 0
@@ -19214,6 +19455,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1042248276
 GameObject:
   m_ObjectHideFlags: 0
@@ -19844,6 +20089,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1122040668
 GameObject:
   m_ObjectHideFlags: 0
@@ -20448,6 +20697,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1156887900
 GameObject:
   m_ObjectHideFlags: 0
@@ -20783,6 +21036,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1167440018
 GameObject:
   m_ObjectHideFlags: 0
@@ -20885,6 +21142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1174419846
 GameObject:
   m_ObjectHideFlags: 0
@@ -21462,6 +21723,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1201122951
 GameObject:
   m_ObjectHideFlags: 0
@@ -21994,6 +22259,135 @@ PolygonCollider2D:
       - {x: 0, y: 1.2625}
       - {x: -0.1017625, y: 1.2452632}
   m_UseDelaunayMesh: 0
+--- !u!1 &1224251211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224251213}
+  - component: {fileID: 1224251212}
+  m_Layer: 0
+  m_Name: ChargeSoundComplete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1224251212
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224251211}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7c445d32ae3c71d83b3526247bbca7eb, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7c445d32ae3c71d83b3526247bbca7eb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1224251213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224251211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.82062, y: -5.00701, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227967420
 GameObject:
   m_ObjectHideFlags: 0
@@ -22643,6 +23037,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1251890019
 GameObject:
   m_ObjectHideFlags: 0
@@ -22807,6 +23205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1271247052
 GameObject:
   m_ObjectHideFlags: 0
@@ -23621,6 +24023,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1323405817
 GameObject:
   m_ObjectHideFlags: 0
@@ -24123,6 +24529,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1373641043
 GameObject:
   m_ObjectHideFlags: 0
@@ -24313,6 +24723,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1380983094
 GameObject:
   m_ObjectHideFlags: 0
@@ -26625,6 +27039,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1527910254
 GameObject:
   m_ObjectHideFlags: 0
@@ -27051,6 +27469,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1574110624
 GameObject:
   m_ObjectHideFlags: 0
@@ -27752,6 +28174,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1629993753
 GameObject:
   m_ObjectHideFlags: 0
@@ -28077,6 +28503,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1643668633
 GameObject:
   m_ObjectHideFlags: 0
@@ -28179,6 +28609,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1651399818
 GameObject:
   m_ObjectHideFlags: 0
@@ -28717,6 +29151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1706331118
 GameObject:
   m_ObjectHideFlags: 0
@@ -29860,6 +30298,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1765558039
 GameObject:
   m_ObjectHideFlags: 0
@@ -30189,6 +30631,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1778554530
 GameObject:
   m_ObjectHideFlags: 0
@@ -31759,6 +32205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1838386837
 GameObject:
   m_ObjectHideFlags: 0
@@ -31949,6 +32399,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.9
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1846409138
 GameObject:
   m_ObjectHideFlags: 0
@@ -32402,6 +32856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1877059272
 GameObject:
   m_ObjectHideFlags: 0
@@ -32591,6 +33049,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1882392260
 GameObject:
   m_ObjectHideFlags: 0
@@ -33222,6 +33684,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1918697684
 GameObject:
   m_ObjectHideFlags: 0
@@ -33499,6 +33965,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1927057751
 GameObject:
   m_ObjectHideFlags: 0
@@ -33601,6 +34071,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1930292545
 GameObject:
   m_ObjectHideFlags: 0
@@ -33703,6 +34177,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &1931192331
 GameObject:
   m_ObjectHideFlags: 0
@@ -35439,6 +35917,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 1
   MainCamera: {fileID: 519420031}
+  boundarySize: 26.6
+  divisionAmount: 2
+  enableVerticalParallax: 1
+  verticalParallaxAmount: 0.5
 --- !u!1 &2085919595
 GameObject:
   m_ObjectHideFlags: 0
@@ -36717,6 +37199,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 125873362}
     - target: {fileID: 5156140771663759046, guid: 408efeaef57bf90a8b491cd96cedd554, type: 3}
+      propertyPath: chargeSound
+      value: 
+      objectReference: {fileID: 405798947}
+    - target: {fileID: 5156140771663759046, guid: 408efeaef57bf90a8b491cd96cedd554, type: 3}
       propertyPath: damageSound
       value: 
       objectReference: {fileID: 1380983095}
@@ -36732,6 +37218,10 @@ PrefabInstance:
       propertyPath: specialRingPickup
       value: 
       objectReference: {fileID: 125873362}
+    - target: {fileID: 5156140771663759046, guid: 408efeaef57bf90a8b491cd96cedd554, type: 3}
+      propertyPath: chargeSoundComplete
+      value: 
+      objectReference: {fileID: 1224251212}
     - target: {fileID: 7318449943104845884, guid: 408efeaef57bf90a8b491cd96cedd554, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.85
@@ -36927,6 +37417,14 @@ PrefabInstance:
       propertyPath: endSound
       value: 
       objectReference: {fileID: 570472584}
+    - target: {fileID: 31378561388105086, guid: 4f007b297a83f014f8de4630a3a03fbf, type: 3}
+      propertyPath: levelIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 31378561388105086, guid: 4f007b297a83f014f8de4630a3a03fbf, type: 3}
+      propertyPath: nextLevelString
+      value: Level1_02
+      objectReference: {fileID: 0}
     - target: {fileID: 142403610956287755, guid: 4f007b297a83f014f8de4630a3a03fbf, type: 3}
       propertyPath: m_Name
       value: FinishLine
@@ -37353,3 +37851,5 @@ SceneRoots:
   - {fileID: 604399779}
   - {fileID: 570472585}
   - {fileID: 1367133001}
+  - {fileID: 405798948}
+  - {fileID: 1224251213}

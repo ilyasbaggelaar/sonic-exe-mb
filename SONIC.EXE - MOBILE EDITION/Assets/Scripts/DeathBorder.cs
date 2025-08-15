@@ -19,7 +19,17 @@ public class DeathBorder : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-                player.StartCoroutine(player.HandleDeathAnimation());   
+            KnucklesPlayerController knucklesPlayer = collision.gameObject.GetComponent<KnucklesPlayerController>();
+
+            if (player != null)
+            {
+                player.StartCoroutine(player.HandleDeathAnimation());
+            }
+            else if (knucklesPlayer != null)
+            {
+                
+                   knucklesPlayer.StartCoroutine(knucklesPlayer.HandleDeathAnimation());   
+            }
         }
     }
 }

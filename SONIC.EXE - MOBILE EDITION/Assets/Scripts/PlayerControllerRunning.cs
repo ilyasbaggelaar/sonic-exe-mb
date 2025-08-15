@@ -22,11 +22,13 @@ public class PlayerControllerRunning : MonoBehaviour
 
     private Animator animator;
 
-    public AudioSource BGM;
+    public AudioSource bGM;
 
     public AudioSource jumpSound;
 
     public AudioSource deathSound;
+
+    public AudioSource deathTrack; //This is different than deathSound, this is the music that accompanies it.
 
     public TextMeshProUGUI ringText;
 
@@ -51,6 +53,7 @@ public class PlayerControllerRunning : MonoBehaviour
 
     private CircleCollider2D circleCollider;
 
+
     private bool isDead = false;
 
     private bool canMove = false;
@@ -62,6 +65,7 @@ public class PlayerControllerRunning : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         circleCollider = GetComponent<CircleCollider2D>();
+   
         rb = GetComponent<Rigidbody2D>();
 
         if (SaveManager.HasSaveData())
@@ -75,7 +79,10 @@ public class PlayerControllerRunning : MonoBehaviour
         StartCoroutine(PlayTitleCard());
 
         rb.freezeRotation = true;
-        BGM.volume = 0.4f;
+
+        bGM.Play();
+        bGM.volume = 0.2f;
+        //bGM.pitch = -1.3f;
         deathSound.Stop();
         jumpSound.Stop();
     }
@@ -93,7 +100,7 @@ public class PlayerControllerRunning : MonoBehaviour
         isDead = true;
         Debug.Log("You're dead.");
         deathSound.Play();
-        BGM.Stop();
+        StartCoroutine(VolumeFadeOut());
 
         FindFirstObjectByType<SideScrollerLevel>().pushLevel = false;
 
@@ -102,6 +109,7 @@ public class PlayerControllerRunning : MonoBehaviour
         animator.enabled = false;
 
         circleCollider.enabled = false;
+
         cutsceneDirector.enabled = false;
         spriteRenderer.sprite = deathSprite;
 
@@ -145,6 +153,7 @@ public class PlayerControllerRunning : MonoBehaviour
 
         else if (lives <= 0)
         {
+             deathTrack.Play();
             gameOverImage.transform.SetAsLastSibling();
             RectTransform rect = gameOverImage.GetComponent<RectTransform>();
 
@@ -164,13 +173,13 @@ public class PlayerControllerRunning : MonoBehaviour
 
     public IEnumerator VolumeFadeOut()
     {
-        float startVol = BGM.volume;
+        float startVol = bGM.volume;
         float duration = 1f;
         float t = 0f;
 
         while (t < duration)
         {
-            BGM.volume = Mathf.Lerp(startVol, 0, t / duration);
+            bGM.volume = Mathf.Lerp(startVol, 0, t / duration);
 
             t += Time.deltaTime;
 
@@ -193,7 +202,8 @@ public class PlayerControllerRunning : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(2f);
+       
+        yield return new WaitForSeconds(8f);
         SceneManager.LoadScene("MainMenu");
     }
     public void UpdateRingUI()

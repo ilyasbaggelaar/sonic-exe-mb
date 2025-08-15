@@ -69,6 +69,10 @@ public class PlayerController : MonoBehaviour
     public AudioSource ringPickup;
     public AudioSource specialRingPickup;
 
+    public AudioSource chargeSound;
+
+    public AudioSource chargeSoundComplete;
+
     public event Action OnRingsLost;
     public event Action OnPlayerDeath;
 
@@ -119,6 +123,8 @@ public class PlayerController : MonoBehaviour
         damageSound.Stop();
         deathSound.Stop();
         ringPickup.Stop();
+        chargeSound.Stop();
+        chargeSoundComplete.Stop();
         specialRingPickup.Stop();
 
     }
@@ -173,7 +179,7 @@ public class PlayerController : MonoBehaviour
         //MathF.Sin gives you the heigh of a point going around a cricle.
         //Imagine drawing a cricle with a pen, if you walkk around the circle, Sin tells you
         // how high you are. It's there to smoothen out calculations through PI.
-        //pi is perfect because it gives youa perfect arc. anything less would make the sin
+        //pi is perfect because it gives you a perfect arc. anything less would make the sin
         //curve not smooth, or more would make it wiggly. 
         //this is good for bounces, a jump, a bobbing animation or a sinewave-style float.
 
@@ -293,6 +299,7 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("isCharging", false);
         animator.SetBool("isDashing", true);
+        chargeSoundComplete.Play();
         Debug.Log("isDashing is now true");
         circleCollider.radius = 0.30f;
         yield return new WaitForSeconds(1.5f);
@@ -389,6 +396,7 @@ public class PlayerController : MonoBehaviour
 
         if (isCharging && Input.GetKeyDown(KeyCode.Z) && isGrounded)
         {
+            chargeSound.Play();
             chargeAmount = Mathf.Min(chargeAmount + 1f, maxCharge);
             animator.SetBool("isCharging", moveInput == 0 && isCharging && Input.GetKeyDown(KeyCode.Z));
             circleCollider.radius = 0.30f;
